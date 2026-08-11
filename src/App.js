@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   Code2, 
   Database, 
@@ -13,53 +14,90 @@ import {
 } from 'lucide-react';
 import { personalData, projectsData, skillsData } from './data';
 
+// إعدادات انتقالات الصفحات (Presentation Slide Fade)
+const pageVariants = {
+  initial: { opacity: 0, y: 20, scale: 0.98 },
+  animate: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.4, ease: [0.25, 1, 0.5, 1] } },
+  exit: { opacity: 0, y: -20, scale: 0.98, transition: { duration: 0.25, ease: 'easeInOut' } }
+};
+
 // --- صفحة عني (About Page) ---
 function AboutPage() {
   return (
-    <section className="space-y-6 pt-4 animate-fadeIn">
+    <motion.section 
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="space-y-6 pt-4"
+    >
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
-        <div className="relative group shrink-0">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur opacity-50 group-hover:opacity-75 transition duration-300"></div>
+        <motion.div 
+          whileHover={{ scale: 1.05, rotate: 1 }}
+          transition={{ type: "spring", stiffness: 300, damping: 15 }}
+          className="relative group shrink-0"
+        >
+          <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full blur opacity-50 group-hover:opacity-80 transition duration-300"></div>
           <img 
             src="/profile.jpg" 
             alt={personalData.name} 
             className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-2 border-slate-800 shadow-2xl"
           />
-        </div>
+        </motion.div>
 
         <div className="space-y-4 text-center md:text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-xs font-mono">
+          <motion.div 
+            initial={{ opacity: 0, x: -10 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.1 }}
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-xs font-mono"
+          >
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
             {personalData.title}
-          </div>
+          </motion.div>
+
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-slate-50">
             {personalData.name}
           </h1>
+
           <p className="text-base sm:text-lg text-slate-400 max-w-2xl leading-relaxed">
             {personalData.bio}
           </p>
+
           <div className="flex flex-wrap justify-center md:justify-start items-center gap-4 text-sm text-slate-400 font-mono pt-1">
             <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4 text-cyan-400" /> {personalData.location}</span>
             <span className="flex items-center gap-1.5"><BookOpen className="w-4 h-4 text-cyan-400" /> CGPA: {personalData.cgpa} ({personalData.university})</span>
           </div>
+
           <div className="pt-4 flex flex-wrap justify-center md:justify-start items-center gap-4">
-            <Link to="/projects" className="px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold transition-all shadow-lg shadow-cyan-500/20 text-sm">
-              Explore Projects →
-            </Link>
-            <Link to="/contact" className="px-5 py-2.5 rounded-lg border border-slate-800 hover:border-slate-700 hover:bg-slate-900 text-slate-300 font-medium transition-all text-sm">
-              Get in Touch
-            </Link>
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+              <Link to="/projects" className="px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold transition-colors shadow-lg shadow-cyan-500/20 text-sm inline-block">
+                Explore Projects →
+              </Link>
+            </motion.div>
+            
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+              <Link to="/contact" className="px-5 py-2.5 rounded-lg border border-slate-800 hover:border-slate-700 hover:bg-slate-900 text-slate-300 font-medium transition-colors text-sm inline-block">
+                Get in Touch
+              </Link>
+            </motion.div>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
 // --- صفحة المشاريع (Projects Page) ---
 function ProjectsPage() {
   return (
-    <section className="space-y-8 animate-fadeIn">
+    <motion.section 
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="space-y-8"
+    >
       <div className="space-y-2 border-b border-slate-800/80 pb-4">
         <h2 className="text-3xl font-bold text-slate-100 flex items-center gap-3">
           <Code2 className="w-7 h-7 text-cyan-400" /> Systems & Projects
@@ -69,7 +107,14 @@ function ProjectsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {projectsData.map((project, idx) => (
-          <div key={idx} className="p-6 rounded-xl bg-slate-900/50 border border-slate-800/80 hover:border-slate-700 transition-all flex flex-col justify-between space-y-4">
+          <motion.div 
+            key={idx}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: idx * 0.1 }}
+            whileHover={{ y: -4, borderColor: 'rgba(34, 211, 238, 0.4)' }}
+            className="p-6 rounded-xl bg-slate-900/50 border border-slate-800/80 transition-all shadow-lg flex flex-col justify-between space-y-4"
+          >
             <div className="space-y-3">
               <div>
                 <h3 className="text-lg font-bold text-slate-100">{project.title}</h3>
@@ -95,17 +140,23 @@ function ProjectsPage() {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 
 // --- صفحة المهارات (Skills Page) ---
 function SkillsPage() {
   return (
-    <section className="space-y-8 animate-fadeIn">
+    <motion.section 
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="space-y-8"
+    >
       <div className="space-y-2 border-b border-slate-800/80 pb-4">
         <h2 className="text-3xl font-bold text-slate-100 flex items-center gap-3">
           <Cpu className="w-7 h-7 text-cyan-400" /> Technical Capabilities
@@ -115,7 +166,14 @@ function SkillsPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {skillsData.map((group, idx) => (
-          <div key={idx} className="p-6 rounded-xl bg-slate-900/30 border border-slate-800/60 space-y-4">
+          <motion.div 
+            key={idx}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: idx * 0.1 }}
+            whileHover={{ y: -3 }}
+            className="p-6 rounded-xl bg-slate-900/30 border border-slate-800/60 space-y-4"
+          >
             <div className="flex items-center gap-3">
               <div className="p-2 rounded-lg bg-cyan-950/80 border border-cyan-800/50 text-cyan-400">
                 {idx === 0 ? <Code2 className="w-5 h-5" /> : idx === 1 ? <Database className="w-5 h-5" /> : <Cpu className="w-5 h-5" />}
@@ -129,10 +187,10 @@ function SkillsPage() {
                 </span>
               ))}
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }
 
@@ -142,40 +200,50 @@ function ContactPage() {
   const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(personalData.email)}`;
 
   return (
-    <section className="space-y-8 animate-fadeIn">
-      <div className="p-8 rounded-2xl bg-gradient-to-b from-slate-900/80 to-slate-950 border border-slate-800 space-y-6">
+    <motion.section 
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="space-y-8"
+    >
+      <div className="p-8 rounded-2xl bg-gradient-to-b from-slate-900/80 to-slate-950 border border-slate-800 space-y-6 shadow-xl">
         <div className="space-y-2">
           <h2 className="text-3xl font-bold text-slate-100">Get In Touch</h2>
           <p className="text-slate-400 text-sm">Open to academic opportunities, software engineering collaborations, and technical discussions.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-sm">
-          <a 
+          <motion.a 
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             href={gmailWebUrl} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-all flex items-center gap-3 group"
+            className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group"
           >
             <Mail className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
             <span className="text-slate-300 group-hover:text-cyan-400 transition-colors">{personalData.email}</span>
-          </a>
+          </motion.a>
 
-          <a 
+          <motion.a 
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
             href={`https://wa.me/${whatsappNumber}`} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-all flex items-center gap-3 group"
+            className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group"
           >
             <Phone className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
             <span className="text-slate-300 group-hover:text-cyan-400 transition-colors">{personalData.phone}</span>
-          </a>
+          </motion.a>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
-// --- المكون الرئيسي مع شريط التنقل المتعدد الصفحات ---
+// --- المكون الرئيسي مع تحريك الأقسام عند الانتقال ---
 function App() {
   const location = useLocation();
 
@@ -187,7 +255,7 @@ function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 flex flex-col justify-between">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 flex flex-col justify-between overflow-x-hidden">
       
       {/* Background Decorative Grid */}
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
@@ -199,20 +267,25 @@ function App() {
             <Terminal className="w-5 h-5" />
             <span>saad_shurrab.dev</span>
           </Link>
-          <nav className="flex items-center gap-2 sm:gap-6 text-sm font-medium">
+          <nav className="flex items-center gap-2 sm:gap-4 text-sm font-medium">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               return (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`px-3 py-1.5 rounded-md transition-all ${
-                    isActive 
-                      ? 'text-cyan-400 bg-cyan-950/50 border border-cyan-800/40 font-semibold' 
-                      : 'text-slate-400 hover:text-cyan-300'
+                  className={`relative px-3 py-1.5 rounded-md transition-colors ${
+                    isActive ? 'text-cyan-400 font-semibold' : 'text-slate-400 hover:text-cyan-300'
                   }`}
                 >
                   {link.name}
+                  {isActive && (
+                    <motion.div 
+                      layoutId="activeTab"
+                      className="absolute inset-0 bg-cyan-950/60 border border-cyan-800/50 rounded-md -z-10"
+                      transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                    />
+                  )}
                 </Link>
               );
             })}
@@ -220,19 +293,21 @@ function App() {
         </div>
       </header>
 
-      {/* Main Page Dynamic Routing */}
+      {/* Main Page Dynamic Animated Routing */}
       <main className="max-w-5xl w-full mx-auto px-6 py-12 relative z-10 my-auto">
-        <Routes>
-          <Route path="/" element={<AboutPage />} />
-          <Route path="/projects" element={<ProjectsPage />} />
-          <Route path="/skills" element={<SkillsPage />} />
-          <Route path="/contact" element={<ContactPage />} />
-        </Routes>
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            <Route path="/" element={<AboutPage />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/skills" element={<SkillsPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </AnimatePresence>
       </main>
 
       {/* Footer */}
       <footer className="border-t border-slate-800/60 py-6 text-center text-xs font-mono text-slate-500">
-        © {new Date().getFullYear()} {personalData.name}. Built with React & React Router.
+        © {new Date().getFullYear()} {personalData.name}. Built with React & Framer Motion.
       </footer>
     </div>
   );
