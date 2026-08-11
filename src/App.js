@@ -13,14 +13,11 @@ import {
 import { personalData, projectsData, skillsData } from './data';
 
 function App() {
-  // تجهيز رقم الهاتف لصيغة رابط الواتساب (بدون مسافات أو إشارة +)
   const whatsappNumber = personalData.phone.replace(/[^0-9]/g, '');
-
-  // رابط Gmail المباشر لفتح صفحة إنشاء رسالة جديدة في تبويب جديد
   const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(personalData.email)}`;
 
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
+    <div className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950 scroll-smooth">
       
       {/* Background Decorative Grid */}
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
@@ -33,18 +30,18 @@ function App() {
             <span>saad_shurrab.dev</span>
           </div>
           <nav className="flex items-center gap-6 text-sm text-slate-400 font-medium">
-            <a href="#about" className="hover:text-cyan-400 transition-colors">About</a>
-            <a href="#projects" className="hover:text-cyan-400 transition-colors">Projects</a>
-            <a href="#skills" className="hover:text-cyan-400 transition-colors">Skills</a>
-            <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
+            <a href="#about" className="hover:text-cyan-400 transition-colors duration-200">About</a>
+            <a href="#projects" className="hover:text-cyan-400 transition-colors duration-200">Projects</a>
+            <a href="#skills" className="hover:text-cyan-400 transition-colors duration-200">Skills</a>
+            <a href="#contact" className="hover:text-cyan-400 transition-colors duration-200">Contact</a>
           </nav>
         </div>
       </header>
 
-      <main className="max-w-5xl mx-auto px-6 py-12 space-y-24 relative z-10">
+      <main className="max-w-5xl mx-auto px-6 py-12 space-y-32 relative z-10">
 
-        {/* Hero Section */}
-        <section id="about" className="space-y-6 pt-8">
+        {/* Hero / About Section */}
+        <section id="about" className="scroll-mt-24 min-h-[75vh] flex flex-col justify-center space-y-6">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
             
             {/* Profile Image */}
@@ -57,7 +54,7 @@ function App() {
               />
             </div>
 
-            {/* Details */}
+            {/* Main Info */}
             <div className="space-y-4 text-center md:text-left">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950/60 border border-cyan-800/50 text-cyan-400 text-xs font-mono">
                 <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
@@ -87,7 +84,7 @@ function App() {
         </section>
 
         {/* Featured Projects Section */}
-        <section id="projects" className="space-y-8">
+        <section id="projects" className="scroll-mt-24 space-y-8 pt-6">
           <div className="space-y-2">
             <h2 className="text-2xl font-bold text-slate-100 flex items-center gap-2">
               <Code2 className="w-6 h-6 text-cyan-400" /> Featured Systems & Projects
@@ -129,7 +126,7 @@ function App() {
         </section>
 
         {/* Technical Capabilities */}
-        <section id="skills" className="space-y-8">
+        <section id="skills" className="scroll-mt-24 space-y-8 pt-6">
           <div className="space-y-2">
             <h2 className="text-2xl font-bold text-slate-100 flex items-center gap-2">
               <Cpu className="w-6 h-6 text-cyan-400" /> Technical Capabilities
@@ -159,7 +156,7 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="space-y-8 pt-8 border-t border-slate-800/80">
+        <section id="contact" className="scroll-mt-24 space-y-8 pt-6">
           <div className="p-8 rounded-2xl bg-gradient-to-b from-slate-900/80 to-slate-950 border border-slate-800 space-y-6">
             <div className="space-y-2">
               <h2 className="text-2xl font-bold text-slate-100">Get In Touch</h2>
@@ -167,7 +164,6 @@ function App() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-sm">
-              {/* رابط Gmail المباشر (يفتح موقع Gmail لإنشاء رسالة في تبويب جديد) */}
               <a 
                 href={gmailWebUrl} 
                 target="_blank" 
@@ -178,7 +174,6 @@ function App() {
                 <span className="text-slate-300 group-hover:text-cyan-400 transition-colors">{personalData.email}</span>
               </a>
 
-              {/* رابط الواتساب (يفتح المحادثة المباشرة في تبويب جديد) */}
               <a 
                 href={`https://wa.me/${whatsappNumber}`} 
                 target="_blank" 
