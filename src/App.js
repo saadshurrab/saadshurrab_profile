@@ -87,7 +87,7 @@ function ProjectsPage() {
         <h2 className="text-3xl font-bold text-slate-100 flex items-center gap-3">
           <Code2 className="w-7 h-7 text-cyan-400" /> Systems & Projects
         </h2>
-        <p className="text-slate-400 text-sm">حلول برمجية وأنظمة حقيقية مع الروابط والتقنيات المستخدمة.</p>
+        <p className="text-slate-400 text-sm">Engineering solutions designed to solve real operational and academic bottlenecks.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -128,7 +128,7 @@ function ProjectsPage() {
               <div className="flex items-center gap-3 text-xs font-mono pt-1">
                 {project.githubUrl && (
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 text-slate-300 hover:text-cyan-400 transition-colors">
-                    <Github className="w-4 h-4" /> Code Repository
+                    <Github className="w-4 h-4" /> Source Code
                   </a>
                 )}
                 {project.demoUrl && (
@@ -153,7 +153,7 @@ function SkillsPage() {
         <h2 className="text-3xl font-bold text-slate-100 flex items-center gap-3">
           <Cpu className="w-7 h-7 text-cyan-400" /> Technical Capabilities
         </h2>
-        <p className="text-slate-400 text-sm">المهارات والتقنيات الأساسية التي أعمل بها.</p>
+        <p className="text-slate-400 text-sm">Core engineering toolkit and software fundamentals.</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -196,7 +196,7 @@ function ContactPage() {
       <div className="p-8 rounded-2xl bg-gradient-to-b from-slate-900/80 to-slate-950 border border-slate-800 space-y-6 shadow-xl">
         <div className="space-y-2">
           <h2 className="text-3xl font-bold text-slate-100">Get In Touch</h2>
-          <p className="text-slate-400 text-sm">يسعدني التواصل معك للفرص الأكاديمية، والتعاون في تطوير البرمجيات، أو الاستفسارات التقنية.</p>
+          <p className="text-slate-400 text-sm">Open to academic opportunities, software engineering collaborations, and technical discussions.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-sm">
