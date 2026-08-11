@@ -13,6 +13,9 @@ import {
 import { personalData, projectsData, skillsData } from './data';
 
 function App() {
+  // تجهيز رقم الهاتف لصيغة رابط الواتساب (بدون مسافات أو إشارة +)
+  const whatsappNumber = personalData.phone.replace(/[^0-9]/g, '');
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
       
@@ -161,11 +164,24 @@ function App() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-sm">
-              <a href={`mailto:${personalData.email}`} className="p-4 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-all flex items-center gap-3 group">
+              {/* رابط البريد الإلكتروني (يفتح تطبيق الجيميل / الإيميل مباشرة) */}
+              <a 
+                href={`mailto:${personalData.email}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-4 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-all flex items-center gap-3 group"
+              >
                 <Mail className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
                 <span className="text-slate-300 group-hover:text-cyan-400 transition-colors">{personalData.email}</span>
               </a>
-              <a href={`tel:${personalData.phone}`} className="p-4 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-all flex items-center gap-3 group">
+
+              {/* رابط الواتساب (يفتح المحادثة في تطبيق الواتساب مباشرة) */}
+              <a 
+                href={`https://wa.me/${whatsappNumber}`} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="p-4 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-all flex items-center gap-3 group"
+              >
                 <Phone className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform" />
                 <span className="text-slate-300 group-hover:text-cyan-400 transition-colors">{personalData.phone}</span>
               </a>
