@@ -1,51 +1,66 @@
 export const personalData = {
   name: "Saad Ahmed Saad Shurrab",
-  title: "Computer Science Student & Systems Thinker",
-  bio: "Focused on building clean, efficient digital infrastructure and transforming manual workflow inefficiencies into structured relational systems.",
-  location: "Rimal, Gaza, Palestine",
-  email: "s421078601@gmail.com",
-  phone: "+970 593612651",
+  title: "Computer Science Undergraduate & Systems Developer",
+  location: "Gaza, Palestine",
   university: "Al-Aqsa University",
-  cgpa: "85.31%",
-  credits: "54 Completed Credit Hours"
+  cgpa: "3.7 / 4.0",
+  email: "saad.shurrab.dev@gmail.com",
+  phone: "+970597321043",
+  linkedin: "https://www.linkedin.com/in/saad-shurrab",
+  github: "https://github.com/saad-shurrab",
+  bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى، شغوف ببناء الأنظمة والحلول البرمجية التي تحل مشكلات واقعية. تتنوع خبرتي العملية بين تطوير البوتات التفاعلية كـ Telegram Bot لإدارة المهام الأكاديمية، وإدارة وتطوير العمليات في مركز النظارات الإيطالي، بالإضافة إلى صياغة الحملات الإعلامية والتسويقية."
 };
 
 export const projectsData = [
   {
-    title: "Academic Telegram Bot",
-    subtitle: "Independent Logic & Automation Project",
-    description: "Designed and coded a custom Telegram bot to centralize class schedules, exam tracking, and automated reminders for university peers.",
-    tags: ["C++ Logic Concepts", "Telegram API", "Automation", "Scheduling Algorithms"],
+    title: "University Academic Telegram Bot",
+    subtitle: "Python & SQL Automated Assistant",
+    description: "بوت تلجرام تم تصميمه وتطويره لمساعدة طلاب الجامعة في تتبع الجدول الدراسي، تسليم التكليفات الأكاديمية، وتنظيم المهام اليومية مع تنبيهات تلقائية.",
     highlights: [
-      "Built reminder logic and command handling from scratch",
-      "Handled multi-section course data schedules",
-      "Automated notification push architecture"
-    ]
+      "قواعد بيانات SQL لتخزين وحفظ جداول الطلاب والمهام",
+      "واجهة تفاعلية خفيفة وسريعة التجاوب داخل التلجرام"
+    ],
+    tags: ["Python", "SQLite / SQL", "python-telegram-bot", "Automation"],
+    githubUrl: "https://github.com/saad-shurrab/student-task-bot",
+    demoUrl: "https://t.me/StudentHelperBot"
   },
   {
-    title: "Logistics Relational DB Concept",
-    subtitle: "System Architecture & Database Normalization",
-    description: "A conceptual framework replacing paper-based optical supply logistics tracking with a fully normalized relational database system.",
-    tags: ["Oracle APEX", "Relational DB", "Schema Design", "Query Optimization"],
+    title: "Barbershop Online Booking System",
+    subtitle: "Software Engineering & Systems Analysis Project",
+    description: "نظام إلكتروني متكامل لإدارة وحجز المواعيد في صالونات الحلاقة، يتيح للزبائن اختيار الحلاق والتوقيت المناسب وتخفيف ازدحام الانتظار.",
     highlights: [
-      "Normalized tables for order lifecycle & client mapping",
-      "Automated delivery status tracking logic",
-      "Query layer designed for proactive bottleneck surfacing"
-    ]
+      "تحليل كامل لمتطلبات النظام (SRS) ومخططات UML",
+      "واجهة إدارة حجز وتحديد مواعيد مرنة"
+    ],
+    tags: ["Systems Analysis", "UML", "Database Design", "Web UX"],
+    githubUrl: "https://github.com/saad-shurrab/barbershop-booking",
+    demoUrl: null
+  },
+  {
+    title: "Optical Italian Center Operations & Ads",
+    subtitle: "Multimedia & Operational Management",
+    description: "إدارة العمليات الميدانية والأنظمة المكتبية لمركز النظارات الإيطالي، إلى جانب تصميم وإخراج الحملات الإعلانية البصرية وإنتاج الفيديوهات الترويجية.",
+    highlights: [
+      "تحسين سير المبيعات والتوصيل والخدمات اللوجستية",
+      "إنتاج مقاطع فيديو حملات ترويجية للمنتجات"
+    ],
+    tags: ["Operations", "Video Production", "Branding", "Digital Marketing"],
+    githubUrl: null,
+    demoUrl: null
   }
 ];
 
 export const skillsData = [
   {
-    category: "Programming & Logic",
-    items: ["C++", "Data Structures", "Algorithms", "Object-Oriented Logic", "Problem Solving"]
+    category: "Languages & Core",
+    items: ["Python", "C++", "JavaScript (ES6+)", "SQL", "HTML5/CSS3"]
   },
   {
-    category: "Databases & Architecture",
-    items: ["Oracle APEX", "Quick SQL", "Relational Schemas", "Database Normalization"]
+    category: "Frameworks & Tools",
+    items: ["React.js", "Tailwind CSS", "Git & GitHub", "Node.js (Basics)", "VS Code"]
   },
   {
-    category: "Operations & Tools",
-    items: ["Workflow Optimization", "ICDL Certified", "Git Fundamentals", "Logistics Coordination"]
+    category: "Engineering & Soft Skills",
+    items: ["Systems Analysis (UML)", "Database Design", "Problem Solving", "Project Coordination"]
   }
 ];
