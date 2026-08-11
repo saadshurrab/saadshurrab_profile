@@ -16,6 +16,9 @@ function App() {
   // تجهيز رقم الهاتف لصيغة رابط الواتساب (بدون مسافات أو إشارة +)
   const whatsappNumber = personalData.phone.replace(/[^0-9]/g, '');
 
+  // رابط Gmail المباشر لفتح صفحة إنشاء رسالة جديدة في تبويب جديد
+  const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(personalData.email)}`;
+
   return (
     <div className="min-h-screen bg-slate-950 text-slate-100 font-sans antialiased selection:bg-cyan-500 selection:text-slate-950">
       
@@ -164,9 +167,9 @@ function App() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-sm">
-              {/* رابط البريد الإلكتروني (يفتح تطبيق الجيميل / الإيميل مباشرة) */}
+              {/* رابط Gmail المباشر (يفتح موقع Gmail لإنشاء رسالة في تبويب جديد) */}
               <a 
-                href={`mailto:${personalData.email}`} 
+                href={gmailWebUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-4 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-all flex items-center gap-3 group"
@@ -175,7 +178,7 @@ function App() {
                 <span className="text-slate-300 group-hover:text-cyan-400 transition-colors">{personalData.email}</span>
               </a>
 
-              {/* رابط الواتساب (يفتح المحادثة في تطبيق الواتساب مباشرة) */}
+              {/* رابط الواتساب (يفتح المحادثة المباشرة في تبويب جديد) */}
               <a 
                 href={`https://wa.me/${whatsappNumber}`} 
                 target="_blank" 
