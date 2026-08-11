@@ -3,22 +3,22 @@ export const personalData = {
   title: "Computer Science Undergraduate & Systems Developer",
   location: "Gaza, Palestine",
   university: "Al-Aqsa University",
-  cgpa: "3.7 / 4.0",
-  email: "saad.shurrab.dev@gmail.com",
-  phone: "+970597321043",
+  cgpa: "85.31%",
+  email: "s421078601@gmail.com",
+  phone: "+970593612651",
   linkedin: "https://www.linkedin.com/in/saad-shurrab",
   github: "https://github.com/saad-shurrab",
-  bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى، شغوف ببناء الأنظمة والحلول البرمجية التي تحل مشكلات واقعية. تتنوع خبرتي العملية بين تطوير البوتات التفاعلية كـ Telegram Bot لإدارة المهام الأكاديمية، وإدارة وتطوير العمليات في مركز النظارات الإيطالي، بالإضافة إلى صياغة الحملات الإعلامية والتسويقية."
+  bio: "Second-year Computer Science student at Al-Aqsa University passionate about engineering practical software solutions and automation tools. Experienced in building interactive Telegram bots, managing operational workflows, and designing end-to-end software systems."
 };
 
 export const projectsData = [
   {
     title: "University Academic Telegram Bot",
     subtitle: "Python & SQL Automated Assistant",
-    description: "بوت تلجرام تم تصميمه وتطويره لمساعدة طلاب الجامعة في تتبع الجدول الدراسي، تسليم التكليفات الأكاديمية، وتنظيم المهام اليومية مع تنبيهات تلقائية.",
+    description: "An automated assistant developed for university students to streamline course schedules, track assignment deadlines, and manage daily tasks with automated notifications.",
     highlights: [
-      "قواعد بيانات SQL لتخزين وحفظ جداول الطلاب والمهام",
-      "واجهة تفاعلية خفيفة وسريعة التجاوب داخل التلجرام"
+      "SQL database integration for persistent student schedule storage",
+      "Interactive, lightweight, and responsive chat interface"
     ],
     tags: ["Python", "SQLite / SQL", "python-telegram-bot", "Automation"],
     githubUrl: "https://github.com/saad-shurrab/student-task-bot",
@@ -27,22 +27,22 @@ export const projectsData = [
   {
     title: "Barbershop Online Booking System",
     subtitle: "Software Engineering & Systems Analysis Project",
-    description: "نظام إلكتروني متكامل لإدارة وحجز المواعيد في صالونات الحلاقة، يتيح للزبائن اختيار الحلاق والتوقيت المناسب وتخفيف ازدحام الانتظار.",
+    description: "A comprehensive digital booking platform designed to streamline appointment scheduling, optimize barber workflows, and reduce queue wait times.",
     highlights: [
-      "تحليل كامل لمتطلبات النظام (SRS) ومخططات UML",
-      "واجهة إدارة حجز وتحديد مواعيد مرنة"
+      "Detailed System Requirements Specification (SRS) & UML diagrams",
+      "Flexible appointment management and scheduling interface"
     ],
     tags: ["Systems Analysis", "UML", "Database Design", "Web UX"],
     githubUrl: "https://github.com/saad-shurrab/barbershop-booking",
     demoUrl: null
   },
   {
-    title: "Optical Italian Center Operations & Ads",
-    subtitle: "Multimedia & Operational Management",
-    description: "إدارة العمليات الميدانية والأنظمة المكتبية لمركز النظارات الإيطالي، إلى جانب تصميم وإخراج الحملات الإعلانية البصرية وإنتاج الفيديوهات الترويجية.",
+    title: "Optical Italian Center Operations & Media",
+    subtitle: "Operational Logistics & Multimedia Campaigns",
+    description: "Managed office operations and delivery logistics while directing visual promotional campaigns and commercial video production for optical products.",
     highlights: [
-      "تحسين سير المبيعات والتوصيل والخدمات اللوجستية",
-      "إنتاج مقاطع فيديو حملات ترويجية للمنتجات"
+      "Optimized sales workflows and field delivery logistics",
+      "Produced targeted video ads and digital branding materials"
     ],
     tags: ["Operations", "Video Production", "Branding", "Digital Marketing"],
     githubUrl: null,
@@ -53,7 +53,7 @@ export const projectsData = [
 export const skillsData = [
   {
     category: "Languages & Core",
-    items: ["Python", "C++", "JavaScript (ES6+)", "SQL", "HTML5/CSS3"]
+    items: ["Python", "C++", "JavaScript (ES6+)", "SQL", "HTML5 / CSS3"]
   },
   {
     category: "Frameworks & Tools",
