@@ -36,8 +36,13 @@ const pageVariants = {
 };
 
 // --- About Page ---
-function AboutPage({ t }) {
+function AboutPage({ t, lang }) {
   const p = t.personalData;
+  
+  // تحديد مسار الملف واسمه بناءً على اللغة الحالية
+  const cvPath = lang === 'ar' ? '/cv-ar.pdf' : '/cv-en.pdf';
+  const cvFileName = lang === 'ar' ? 'Saad_Shurrab_CV_AR.pdf' : 'Saad_Shurrab_CV_EN.pdf';
+
   return (
     <motion.section variants={pageVariants} initial="initial" animate="animate" exit="exit" className="space-y-8 pt-2">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-8">
@@ -80,14 +85,14 @@ function AboutPage({ t }) {
               </Link>
             </motion.div>
 
-            {/* زر تنزيل السيرة الذاتية PDF */}
+            {/* زر تنزيل السيرة الذاتية PDF - معدل ليدعم النسختين */}
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <a 
-                href="/cv.pdf" 
-                download="Saad_Shurrab_CV.pdf"
+                href={cvPath} 
+                download={cvFileName}
                 className="px-5 py-2.5 rounded-lg bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 hover:bg-slate-800 text-cyan-400 font-medium transition-colors text-sm inline-flex items-center gap-2 shadow-sm"
               >
-                <Download className="w-4 h-4 animate-bounce" /> {p.downloadCV || (t.nav.about === 'نبذة عني' ? 'تحميل السيرة الذاتية' : 'Download CV')}
+                <Download className="w-4 h-4 animate-bounce" /> {p.downloadCV || (lang === 'ar' ? 'تحميل السيرة الذاتية' : 'Download CV')}
               </a>
             </motion.div>
 
@@ -506,7 +511,8 @@ function App() {
       <main className="max-w-5xl w-full mx-auto px-4 sm:px-6 py-8 sm:py-12 relative z-10 my-auto">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<AboutPage t={t} />} />
+            {/* تم تمرير lang هنا لمكون AboutPage */}
+            <Route path="/" element={<AboutPage t={t} lang={lang} />} />
             <Route path="/story" element={<StoryPage t={t} />} />
             <Route path="/certificates" element={<CertificatesPage t={t} />} />
             <Route path="/projects" element={<ProjectsPage t={t} />} />
