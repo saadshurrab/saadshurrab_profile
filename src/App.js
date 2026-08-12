@@ -24,7 +24,8 @@ import {
   BadgeCheck, 
   Maximize2, 
   X,
-  Languages
+  Languages,
+  Download
 } from 'lucide-react';
 import { content } from './data';
 
@@ -79,6 +80,17 @@ function AboutPage({ t }) {
               </Link>
             </motion.div>
 
+            {/* زر تنزيل السيرة الذاتية PDF */}
+            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
+              <a 
+                href="/cv.pdf" 
+                download="Saad_Shurrab_CV.pdf"
+                className="px-5 py-2.5 rounded-lg bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 hover:bg-slate-800 text-cyan-400 font-medium transition-colors text-sm inline-flex items-center gap-2 shadow-sm"
+              >
+                <Download className="w-4 h-4 animate-bounce" /> {p.downloadCV || (t.nav.about === 'نبذة عني' ? 'تحميل السيرة الذاتية' : 'Download CV')}
+              </a>
+            </motion.div>
+
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <Link to="/projects" className="px-5 py-2.5 rounded-lg border border-slate-800 hover:border-slate-700 hover:bg-slate-900 text-slate-300 font-medium transition-colors text-sm inline-block">
                 {p.viewProjects}
@@ -99,7 +111,7 @@ function AboutPage({ t }) {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
             <h3 className="font-bold text-slate-100 text-base">{p.degree}</h3>
             <span className="text-xs font-mono text-cyan-400 bg-cyan-950/80 border border-cyan-800/50 px-2.5 py-1 rounded-md w-fit">
-              2022 – Present
+              2023 – Present
             </span>
           </div>
           <p className="text-xs font-mono text-slate-300">{p.university} — CGPA: <span className="text-cyan-400 font-bold">{p.cgpa}</span></p>
