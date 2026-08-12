@@ -11,7 +11,7 @@ export const content = {
     personalData: {
       name: "Saad Ahmed Saad Shurrab",
       title: "Computer Science Student & Technical Operations Assistant",
-      bio: "Second-year Computer Science student at Al-Aqsa University with an 85.31% CGPA. Driven by system architectural principles, database optimization, software development, and practical automation.",
+      bio: "Second-year Computer Science student at Al-Aqsa University with an 85.95% CGPA. Driven by system architectural principles, database optimization, software development, and practical automation.",
       location: "Gaza, Palestine",
       email: "s421078601@gmail.com",
       phone: "+970 593612651",
@@ -92,7 +92,7 @@ export const content = {
           tags: ["Python", "Telegram API", "SQL", "Automation", "Scheduling Logic"]
         },
         {
-          title: "Optical Inventory & Database Schema Architecture",
+          title: "Optical Inventory & Database Schema Architecture - (Under development)",
           subtitle: "Database & Systems Design Concept",
           description: "Conceptual relational database schema designed to replace manual paper-based order tracking in optical supply logistics with normalized tables and automated query layers.",
           highlights: [
@@ -146,13 +146,13 @@ export const content = {
     personalData: {
       name: "سعد أحمد سعد شراب",
       title: "طالب علوم حاسوب ومساعد عمليات تقنية",
-      bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى بمعدل تراكمي 85.95%. شغوف بهندسة الأنظمة، تحسين قواعد البيانات، تطوير البرمجيات، والحلول البرمجية المؤتمنة.",
+      bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى بمعدل تراكمي 85.95%. شغوف بهندسة الأنظمة، تحسين قواعد البيانات، تطوير البرمجيات، والحلول البرمجية المؤتمتة.",
       location: "غزة، فلسطين",
       email: "s421078601@gmail.com",
       phone: "+970 593612651",
       dob: "26/10/2004",
       company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
-      role: "مساعد إداري ومندوب توصيل",
+      role: "مساعد إداري ولوجستي ومندوب توصيل",
       companyPeriod: "ديسمبر 2025 – الحالي",
       university: "جامعة الأقصى",
       degree: "بكالوريوس علوم الحاسوب (مستمر)",
@@ -165,12 +165,12 @@ export const content = {
       downloadCV: "تحميل السيرة الذاتية",
       education: "التعليم الأكاديمي",
       experience: "الخبرة المهنية",
-      expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات الطبية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة."
+      expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة."
     },
     storyData: {
       badge: "قصة التحدي والإصرار",
       title: "رحلة الصمود وبناء الأنظمة",
-      subtitle: "من اللوجستيات الميدانية إلى هندسة البرمجيات والأنظمة المئتمتة.",
+      subtitle: "من اللوجستيات الميدانية إلى هندسة البرمجيات والأنظمة المؤتمتة.",
       paragraphs: [
         {
           heading: "تجاوز العقبات وإعادة بناء الأدوات",
@@ -227,9 +227,9 @@ export const content = {
           tags: ["Python", "Telegram API", "SQL", "Automation", "Scheduling Logic"]
         },
         {
-          title: "معمارية قاعدة بيانات ومخزون شركة البصريات",
+          title: "(قيد التطوير) -  معمارية قاعدة بيانات ومخزون شركة البصريات",
           subtitle: "مفهوم تصميم نظام وقواعد بيانات",
-          description: "تصميم هيكلي لقاعدة بيانات علائية لاستبدال التتبع الورقي اليدوي للطلبيات في لوجستيات البصريات بجداول منتظمة واستعلامات مئتمتة.",
+          description: "تصميم هيكلي لقاعدة بيانات علائية لاستبدال التتبع الورقي اليدوي للطلبيات في لوجستيات البصريات بجداول منتظمة واستعلامات مؤتمتة.",
           highlights: [
             "تصميم مخططات العلاقات للطلبيات والمخزون والعملاء (Schema Normalization)",
             "وضع استراتيجيات الفهرسة واستعلامات SQL للقضاء على الاختناقات التشغيلية",
@@ -264,7 +264,7 @@ export const content = {
     },
     contactData: {
       title: "تواصل معي",
-      subtitle: "مرحب بالفرص الأكاديمية، التعاون في هندسة البرمجيات، والمناقشات التقنية.",
+      subtitle: "مرحبا بالفرص الأكاديمية، التعاون في هندسة البرمجيات، والمناقشات التقنية.",
       linkedin: "ملف LinkedIn",
       github: "GitHub ملف"
     }
