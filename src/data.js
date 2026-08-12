@@ -1,66 +1,86 @@
 export const personalData = {
   name: "Saad Ahmed Saad Shurrab",
-  title: "Computer Science Undergraduate & Systems Developer",
-  location: "Gaza, Palestine",
-  university: "Al-Aqsa University",
-  cgpa: "85.31%",
+  title: "Computer Science Student & Technical Operations Assistant",
+  bio: "Third-year Computer Science student at Al-Aqsa University with a 85.31% CGPA. Driven by system architectural principles, database optimization, and practical automation.",
+  location: "Rimal, Gaza, Palestine",
   email: "s421078601@gmail.com",
-  phone: "+970593612651",
-  linkedin: "https://www.linkedin.com/in/saad-shurrab",
-  github: "https://github.com/saad-shurrab",
-  bio: "Second-year Computer Science student at Al-Aqsa University passionate about engineering practical software solutions and automation tools. Experienced in building interactive Telegram bots, managing operational workflows, and designing end-to-end software systems."
+  phone: "+970 593612651",
+  dob: "26/10/2004",
+  company: "Pure Vision Ophthalmic Supplies Company",
+  role: "Office & Logistics Assistant",
+  companyPeriod: "December 2025 – Present",
+  university: "Al-Aqsa University – Gaza",
+  degree: "B.Sc. Computer Science (in progress)",
+  cgpa: "85.31%",
+  creditsCompleted: "66 credit hours completed ",
+  github: "https://github.com/",
+  linkedin: "https://linkedin.com/in/",
+};
+
+export const storyData = {
+  title: "The Resilience & Systems Journey",
+  subtitle: "From field logistics under disruption to software architecture and automated systems.",
+  paragraphs: [
+    {
+      heading: "Overcoming Disruption & Rebuilding My Tools",
+      text: "During the conflict, losing my laptop meant losing my direct gateway to coding and academic progress. Refusing to let my education stop, I worked in field operations as an Office & Logistics Assistant at Pure Vision (Ophthalmic Supplies). Working full days managing deliveries under failing infrastructure allowed me to fund a new laptop and resume self-directed computer science coursework."
+    },
+    {
+      heading: "Engineering Insight From Field Operations",
+      text: "Tracking order deliveries and inventory manually on paper at Pure Vision revealed how inefficient non-digital systems truly are. Experiencing these real-world operational bottlenecks firsthand inspired me to model normalized database schemas, query optimization layers, and automated tracking workflows to solve manual inventory issues."
+    },
+    {
+      heading: "Building Practical Solutions",
+      text: "Before my logistics role, I noticed classmates missing crucial exam schedules across scattered communication channels. To solve this, I designed and coded an automated Academic Telegram Bot from scratch—managing reminder logic, notification triggers, and schedule data across multiple course sections."
+    }
+  ]
 };
 
 export const projectsData = [
   {
-    title: "University Academic Telegram Bot",
-    subtitle: "Python & SQL Automated Assistant",
-    description: "An automated assistant developed for university students to streamline course schedules, track assignment deadlines, and manage daily tasks with automated notifications.",
+    title: "Academic Telegram Bot",
+    subtitle: "Independent Project (2024)",
+    description: "Designed and coded a Telegram bot from scratch to resolve exam schedule tracking and assignment deadline synchronization for university peers.",
     highlights: [
-      "SQL database integration for persistent student schedule storage",
-      "Interactive, lightweight, and responsive chat interface"
+      "Built reminder logic and custom command handling from scratch",
+      "Handled scheduling data and automated notifications across multiple course sections",
+      "Created a daily automated tool serving real peer needs"
     ],
-    tags: ["Python", "SQLite / SQL", "python-telegram-bot", "Automation"],
-    githubUrl: "https://github.com/saad-shurrab/student-task-bot",
-    demoUrl: "https://t.me/StudentHelperBot"
+    tags: ["Telegram API", "Automation", "Python", "Scheduling Logic"],
+    githubUrl: "",
+    demoUrl: ""
   },
   {
-    title: "Barbershop Online Booking System",
-    subtitle: "Software Engineering & Systems Analysis Project",
-    description: "A comprehensive digital booking platform designed to streamline appointment scheduling, optimize barber workflows, and reduce queue wait times.",
+    title: "Optical Inventory & Database Schema Architecture (In Concept)",
+    subtitle: "Database & Systems Design Concept",
+    description: "Conceptual relational database schema designed to replace manual paper-based order tracking in ophthalmic supply logistics with normalized tables and automated query layers.",
     highlights: [
-      "Detailed System Requirements Specification (SRS) & UML diagrams",
-      "Flexible appointment management and scheduling interface"
+      "Designed normalized order, inventory, and client schema structures",
+      "Mapped indexing strategy and automated bottleneck detection queries",
+      "Designed to replace manual paper records with streamlined tracking"
     ],
-    tags: ["Systems Analysis", "UML", "Database Design", "Web UX"],
-    githubUrl: "https://github.com/saad-shurrab/barbershop-booking",
-    demoUrl: null
-  },
-  {
-    title: "Optical Italian Center Operations & Media",
-    subtitle: "Operational Logistics & Multimedia Campaigns",
-    description: "Managed office operations and delivery logistics while directing visual promotional campaigns and commercial video production for optical products.",
-    highlights: [
-      "Optimized sales workflows and field delivery logistics",
-      "Produced targeted video ads and digital branding materials"
-    ],
-    tags: ["Operations", "Video Production", "Branding", "Digital Marketing"],
-    githubUrl: null,
-    demoUrl: null
+    tags: ["Relational Databases", "Oracle APEX", "SQL", "Logistics Architecture"],
+    githubUrl: "",
+    demoUrl: ""
   }
 ];
 
 export const skillsData = [
   {
-    category: "Languages & Core",
-    items: ["Python", "C++", "JavaScript (ES6+)", "SQL", "HTML5 / CSS3"]
+    category: "Programming & Core CS",
+    items: ["C++", "Data Structures", "Systems Architecture", "Problem Solving", "Algorithm Fundamentals"]
   },
   {
-    category: "Frameworks & Tools",
-    items: ["React.js", "Tailwind CSS", "Git & GitHub", "Node.js (Basics)", "VS Code"]
+    category: "Database Systems",
+    items: ["Oracle APEX", "Quick SQL Basics", "Relational Database Schema Design", "Query Logic"]
   },
   {
-    category: "Engineering & Soft Skills",
-    items: ["Systems Analysis (UML)", "Database Design", "Problem Solving", "Project Coordination"]
+    category: "Operations & Technical Tools",
+    items: ["ICDL Certified", "Logistics Operations", "Microsoft Office", "Field Coordination"]
   }
+];
+
+export const languagesData = [
+  { name: "Arabic", level: "Native" },
+  { name: "English", level: "Intermediate / Technical Proficiency" }
 ];
