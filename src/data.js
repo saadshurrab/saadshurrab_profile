@@ -156,7 +156,7 @@ export const content = {
       companyPeriod: "ديسمبر 2025 – الحالي",
       university: "جامعة الأقصى",
       degree: "بكالوريوس علوم الحاسوب (مستمر)",
-      cgpa: "85.31%",
+      cgpa: "85.95%",
       creditsCompleted: "تم إنجاز 66 ساعة معتمدة",
       github: "https://github.com/saadshurrab",
       linkedin: "https://ps.linkedin.com/in/saad-ahmed-shurrab-99099841b",
@@ -195,9 +195,9 @@ export const content = {
           title: "الرخصة الدولية لقيادة الحاسوب (ICDL)",
           issuer: "مركز Learn More للتدريب والتطوير",
           accreditation: "البورد الكندي (Reg No. 56009111acc) & ISO 21001",
-          duration: "20 ساعة تدريبية (21/12/2025 – 15/01/2026)",
+          duration: "ساعة تدريبية 20 (21/12/2025 – 15/01/2026) ",
           description: "تدريب عملي شامل يغطي مهارات تطبيقات الحاسوب الأساسية، الاتصالات الرقمية، وأدوات أتمتة المكاتب.",
-          badge: "معتمد",
+          badge: "شهادة معتمدة",
           image: "/icdl.jpg"
         },
         {
