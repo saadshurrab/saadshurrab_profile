@@ -27,6 +27,7 @@ export const content = {
       linkedin: "https://ps.linkedin.com/in/saad-ahmed-shurrab-99099841b",
       readJourney: "Read My Journey",
       viewProjects: "View Projects",
+      downloadCV: "Download CV",
       education: "Education",
       experience: "Professional Experience",
       expDesc: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies at Pure Vision Co. under complex operational conditions."
@@ -161,6 +162,7 @@ export const content = {
       linkedin: "https://ps.linkedin.com/in/saad-ahmed-shurrab-99099841b",
       readJourney: "اقرأ مسيرتي",
       viewProjects: "عرض المشاريع",
+      downloadCV: "تحميل السيرة الذاتية",
       education: "التعليم الأكاديمي",
       experience: "الخبرة المهنية",
       expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات الطبية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة."
