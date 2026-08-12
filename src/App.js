@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Routes, Route, Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
@@ -20,9 +20,12 @@ import {
   Calendar,
   Compass,
   Sparkles,
-  Flame
+  Flame,
+  BadgeCheck,
+  Maximize2,
+  X
 } from 'lucide-react';
-import { personalData, storyData, projectsData, skillsData, languagesData } from './data';
+import { personalData, storyData, certificatesData, projectsData, skillsData, languagesData } from './data';
 
 const pageVariants = {
   initial: { opacity: 0, y: 15, scale: 0.99 },
@@ -129,7 +132,7 @@ function AboutPage() {
   );
 }
 
-// --- Story Page (صفحة قصة التحدي والإصرار) ---
+// --- Story Page ---
 function StoryPage() {
   return (
     <motion.section variants={pageVariants} initial="initial" animate="animate" exit="exit" className="space-y-8">
@@ -162,6 +165,97 @@ function StoryPage() {
           </motion.div>
         ))}
       </div>
+    </motion.section>
+  );
+}
+
+// --- Certificates Page (عرض الصور والتكبير) ---
+function CertificatesPage() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  return (
+    <motion.section variants={pageVariants} initial="initial" animate="animate" exit="exit" className="space-y-8">
+      <div className="space-y-2 border-b border-slate-800/80 pb-4">
+        <h2 className="text-3xl font-bold text-slate-100 flex items-center gap-3">
+          <Award className="w-7 h-7 text-cyan-400" /> Certifications & Accreditation
+        </h2>
+        <p className="text-slate-400 text-sm">Verified professional training, technical credentials, and academy completion certificates.</p>
+      </div>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {certificatesData.map((cert, idx) => (
+          <motion.div 
+            key={idx}
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: idx * 0.1 }}
+            className="flex flex-col justify-between p-6 rounded-xl bg-slate-900/50 border border-slate-800/80 space-y-4 hover:border-cyan-500/40 transition-colors"
+          >
+            <div className="space-y-3">
+              <div className="flex items-start justify-between gap-2">
+                <div className="flex items-center gap-2.5">
+                  <BadgeCheck className="w-6 h-6 text-cyan-400 shrink-0" />
+                  <h3 className="text-base font-bold text-slate-100 leading-snug">{cert.title}</h3>
+                </div>
+                <span className="text-xs font-mono text-cyan-400 bg-cyan-950/80 border border-cyan-800/50 px-2.5 py-1 rounded-md shrink-0">
+                  {cert.badge}
+                </span>
+              </div>
+
+              {cert.image && (
+                <div 
+                  onClick={() => setSelectedImage(cert.image)}
+                  className="relative group cursor-pointer overflow-hidden rounded-lg border border-slate-800 hover:border-cyan-500/50 transition-colors my-3"
+                >
+                  <img 
+                    src={cert.image} 
+                    alt={cert.title} 
+                    className="w-full h-48 object-cover object-top group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-cyan-400 text-xs font-mono">
+                    <Maximize2 className="w-4 h-4" /> Click to enlarge
+                  </div>
+                </div>
+              )}
+
+              <div className="space-y-1 text-xs font-mono text-slate-300">
+                <p><strong className="text-slate-200">Issuer:</strong> {cert.issuer}</p>
+                {cert.accreditation && <p className="text-cyan-400/90"><strong className="text-slate-200">Accreditation:</strong> {cert.accreditation}</p>}
+                {cert.duration && <p><strong className="text-slate-200">Duration:</strong> {cert.duration}</p>}
+                {cert.trainer && <p><strong className="text-slate-200">Trainer:</strong> {cert.trainer}</p>}
+              </div>
+
+              <p className="text-xs text-slate-300 leading-relaxed pt-1">{cert.description}</p>
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
+      <AnimatePresence>
+        {selectedImage && (
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setSelectedImage(null)}
+            className="fixed inset-0 z-50 bg-slate-950/90 backdrop-blur-md flex items-center justify-center p-4"
+          >
+            <div className="relative max-w-4xl w-full max-h-[90vh] flex items-center justify-center">
+              <button 
+                onClick={() => setSelectedImage(null)}
+                className="absolute -top-12 right-0 p-2 rounded-full bg-slate-800 text-slate-300 hover:text-white hover:bg-slate-700 transition-colors"
+              >
+                <X className="w-6 h-6" />
+              </button>
+              <img 
+                src={selectedImage} 
+                alt="Certificate Full View" 
+                className="max-w-full max-h-[85vh] object-contain rounded-lg border border-slate-800 shadow-2xl"
+              />
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.section>
   );
 }
@@ -317,6 +411,7 @@ function App() {
   const navLinks = [
     { name: 'About', path: '/' },
     { name: 'Story', path: '/story' },
+    { name: 'Certificates', path: '/certificates' },
     { name: 'Projects', path: '/projects' },
     { name: 'Skills', path: '/skills' },
     { name: 'Contact', path: '/contact' },
@@ -366,6 +461,7 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<AboutPage />} />
             <Route path="/story" element={<StoryPage />} />
+            <Route path="/certificates" element={<CertificatesPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/skills" element={<SkillsPage />} />
             <Route path="/contact" element={<ContactPage />} />
