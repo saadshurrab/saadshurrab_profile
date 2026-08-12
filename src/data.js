@@ -1,7 +1,7 @@
 export const personalData = {
   name: "Saad Ahmed Saad Shurrab",
   title: "Computer Science Student & Technical Operations Assistant",
-  bio: "Third-year Computer Science student at Al-Aqsa University with a 85.31% CGPA. Driven by system architectural principles, database optimization, and practical automation.",
+  bio: "second-year Computer Science student at Al-Aqsa University with a 85.31% CGPA. Driven by system architectural principles, database optimization, and practical automation.",
   location: "Rimal, Gaza, Palestine",
   email: "s421078601@gmail.com",
   phone: "+970 593612651",
@@ -39,7 +39,7 @@ export const storyData = {
 export const projectsData = [
   {
     title: "Academic Telegram Bot",
-    subtitle: "Independent Project (2024)",
+    subtitle: "Independent Project (2025)",
     description: "Designed and coded a Telegram bot from scratch to resolve exam schedule tracking and assignment deadline synchronization for university peers.",
     highlights: [
       "Built reminder logic and custom command handling from scratch",
