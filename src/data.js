@@ -265,8 +265,8 @@ export const content = {
     contactData: {
       title: "تواصل معي",
       subtitle: "مرحبا بالفرص الأكاديمية، التعاون في هندسة البرمجيات، والمناقشات التقنية.",
-      linkedin: "ملف LinkedIn",
-      github: "GitHub ملف"
+      linkedin: "LinkedIn",
+      github: "GitHub"
     }
   }
 };
