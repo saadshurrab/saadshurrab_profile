@@ -99,7 +99,7 @@ function AboutPage({ t }) {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
             <h3 className="font-bold text-slate-100 text-base">{p.degree}</h3>
             <span className="text-xs font-mono text-cyan-400 bg-cyan-950/80 border border-cyan-800/50 px-2.5 py-1 rounded-md w-fit">
-              2023 – Present
+              2022 – Present
             </span>
           </div>
           <p className="text-xs font-mono text-slate-300">{p.university} — CGPA: <span className="text-cyan-400 font-bold">{p.cgpa}</span></p>
