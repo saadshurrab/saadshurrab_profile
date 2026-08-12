@@ -36,6 +36,27 @@ export const storyData = {
   ]
 };
 
+export const certificatesData = [
+  {
+    title: "International Computer Driving License (ICDL)",
+    issuer: "Learn More Institute for Training and Development",
+    accreditation: "Canadian Board (Reg No. 56009111acc) & ISO 21001",
+    duration: "20 Training Hours (21/12/2025 – 15/01/2026)",
+    description: "Comprehensive practical training covering essential computer application skills, digital communication, and office automation tools.",
+    badge: "Certified",
+    image: "/icdl.jpg" // اسم صورة ICDL داخل مجلد public
+  },
+  {
+    title: "Certificate of Attendance – The Bit Course",
+    issuer: "Torino Academy (TA)",
+    trainer: "Shady Said (International Trainer)",
+    type: "Virtual Training",
+    description: "Professional training focusing on foundational business strategies and network marketing fundamentals.",
+    badge: "Attendance",
+    image: "/bit-course.jpg" // اسم صورة الكورس داخل مجلد public
+  }
+];
+
 export const projectsData = [
   {
     title: "Academic Telegram Bot",
