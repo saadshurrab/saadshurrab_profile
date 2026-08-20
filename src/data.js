@@ -89,18 +89,39 @@ export const content = {
             "Integrated database management to structure task deadlines across multiple course sections",
             "Created a daily automated utility actively serving peer academic needs"
           ],
-          tags: ["Python", "Telegram API", "SQL", "Automation", "Scheduling Logic"]
+          tags: ["Python", "Telegram API", "SQL", "Automation", "Scheduling Logic"],
+          links: [
+            { label: "Open in Telegram", url: "https://t.me/alaqsamoodle_bot", type: "telegram" },
+            { label: "View Code", url: "https://github.com/saadshurrab", type: "github" }
+          ]
         },
         {
-          title: "Optical Inventory & Database Schema Architecture - (Under development)",
-          subtitle: "Database & Systems Design Concept",
-          description: "Conceptual relational database schema designed to replace manual paper-based order tracking in optical supply logistics with normalized tables and automated query layers.",
+          title: "Pure Vision Optical Supplies — Company Website",
+          subtitle: "Live Company Website (2025)",
+          description: "A fully responsive company website built for Pure Vision Optical Supplies Co. to showcase optical equipment, services, and contact information with a modern professional design.",
           highlights: [
-            "Designed normalized order, inventory, and client relational schemas",
-            "Mapped indexing strategies and SQL queries to eliminate operational bottlenecks",
-            "Aimed at transforming manual paper records into a streamlined digital workflow"
+            "Designed and developed a complete company landing page with service showcase",
+            "Implemented responsive design for mobile and desktop viewing",
+            "Integrated contact forms and company branding elements"
           ],
-          tags: ["Relational Databases", "Oracle APEX", "SQL", "Logistics Architecture"]
+          tags: ["React", "Tailwind CSS", "Responsive Design", "Frontend"],
+          links: [
+            { label: "Visit Website", url: "https://pure-vision.onrender.com/", type: "external" }
+          ]
+        },
+        {
+          title: "Optical Center Management System — The Italian Center",
+          subtitle: "Full-Stack Management Platform (2025)",
+          description: "An integrated management system for an optical center handling inventory, orders, clients, appointments, and daily operations with a comprehensive dashboard interface.",
+          highlights: [
+            "Built a complete management dashboard for optical center daily operations",
+            "Implemented inventory tracking, client management, and appointment scheduling",
+            "Designed normalized database schema for efficient data handling"
+          ],
+          tags: ["React", "Node.js", "Database", "Full-Stack", "Management System"],
+          links: [
+            { label: "Visit Website", url: "https://the-italian-center-1.onrender.com/", type: "external" }
+          ]
         }
       ]
     },
@@ -224,18 +245,39 @@ export const content = {
             "ربط قاعدة بيانات لتنظيم مواعيد المهام عبر المساقات الأكاديمية المختلفة",
             "تطوير أداة يومية تخدم الاحتياجات الأكاديمية للزملاء بشكل فعال"
           ],
-          tags: ["Python", "Telegram API", "SQL", "Automation", "Scheduling Logic"]
+          tags: ["Python", "Telegram API", "SQL", "Automation", "Scheduling Logic"],
+          links: [
+            { label: "فتح في تليجرام", url: "https://t.me/alaqsamoodle_bot", type: "telegram" },
+            { label: "عرض الكود", url: "https://github.com/saadshurrab", type: "github" }
+          ]
         },
         {
-          title: "(قيد التطوير) -  معمارية قاعدة بيانات ومخزون شركة البصريات",
-          subtitle: "مفهوم تصميم نظام وقواعد بيانات",
-          description: "تصميم هيكلي لقاعدة بيانات علائية لاستبدال التتبع الورقي اليدوي للطلبيات في لوجستيات البصريات بجداول منتظمة واستعلامات مؤتمتة.",
+          title: "موقع شركة الرؤية النقية لمستلزمات البصريات",
+          subtitle: "موقع الشركة الرسمي (2025)",
+          description: "موقع شركة كامل ومتجاوب لشركة الرؤية النقية لمستلزمات البصريات لعرض المعدات البصرية والخدمات ومعلومات التواصل بتصميم احترافي عصري.",
           highlights: [
-            "تصميم مخططات العلاقات للطلبيات والمخزون والعملاء (Schema Normalization)",
-            "وضع استراتيجيات الفهرسة واستعلامات SQL للقضاء على الاختناقات التشغيلية",
-            "يهدف إلى تحويل السجلات الورقية إلى نظام رقمي سلس"
+            "تصميم وتطوير صفحة هبوط كاملة للشركة مع عرض الخدمات",
+            "تنفيذ تصميم متجاوب يعمل على الجوال وسطح المكتب",
+            "دمج نماذج التواصل وعناصر هوية الشركة"
           ],
-          tags: ["Relational Databases", "Oracle APEX", "SQL", "Logistics Architecture"]
+          tags: ["React", "Tailwind CSS", "تصميم متجاوب", "واجهة أمامية"],
+          links: [
+            { label: "زيارة الموقع", url: "https://pure-vision.onrender.com/", type: "external" }
+          ]
+        },
+        {
+          title: "نظام الإدارة المتكامل لمركز البصريات",
+          subtitle: "منصة إدارة متكاملة (2025)",
+          description: "نظام إدارة متكامل لمركز بصريات يتعامل مع المخزون، الطلبيات، العملاء، المواعيد والعمليات اليومية مع لوحة تحكم شاملة.",
+          highlights: [
+            "بناء لوحة تحكم إدارية شاملة لعمليات المركز اليومية",
+            "تنفيذ تتبع المخزون، إدارة العملاء، وجدولة المواعيد",
+            "تصميم مخطط قاعدة بيانات منظم لمعالجة البيانات بكفاءة"
+          ],
+          tags: ["React", "Node.js", "قاعدة بيانات", "Full-Stack", "نظام إدارة"],
+          links: [
+            { label: "زيارة الموقع", url: "https://the-italian-center-1.onrender.com/", type: "external" }
+          ]
         }
       ]
     },

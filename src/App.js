@@ -25,7 +25,9 @@ import {
   Maximize2, 
   X,
   Languages,
-  Download
+  Download,
+  Send,
+  ExternalLink
 } from 'lucide-react';
 import { content } from './data';
 
@@ -333,6 +335,36 @@ function ProjectsPage({ t }) {
                 </span>
               ))}
             </div>
+
+            {project.links && project.links.length > 0 && (
+              <div className="pt-4 border-t border-slate-800/60 flex flex-wrap gap-3">
+                {project.links.map((link, lIdx) => {
+                  const Icon =
+                    link.type === 'telegram' ? Send :
+                    link.type === 'github' ? Github :
+                    ExternalLink;
+                  const isPrimary = lIdx === 0;
+                  return (
+                    <motion.a
+                      key={lIdx}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      whileHover={{ scale: 1.03 }}
+                      whileTap={{ scale: 0.97 }}
+                      className={`inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-colors ${
+                        isPrimary
+                          ? 'bg-cyan-500 hover:bg-cyan-400 text-slate-950 shadow-lg shadow-cyan-500/20'
+                          : 'bg-slate-900 border border-slate-700/60 hover:border-cyan-500/50 text-slate-300 hover:text-cyan-400'
+                      }`}
+                    >
+                      <Icon className="w-4 h-4" />
+                      {link.label}
+                    </motion.a>
+                  );
+                })}
+              </div>
+            )}
           </motion.div>
         ))}
       </div>
