@@ -466,8 +466,8 @@ function SkillsPage({ t }) {
 function ContactPage({ t, lang }) {
   const p = t.personalData;
   const ct = t.contactData;
-  const rawPhone = p.phone.replace(/[^0-9]/g, '');
-  const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(p.email)}`;
+  const rawPhone = p.phone ? p.phone.replace(/[^0-9+]/g, '') : '';
+  const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(p.email || '')}`;
 
   return (
     <motion.section variants={pageVariants} initial="initial" animate="animate" exit="exit" className="space-y-8">
@@ -478,43 +478,67 @@ function ContactPage({ t, lang }) {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-sm">
-          <a href={`tel:${rawPhone}`} className="p-5 rounded-lg bg-slate-900/60 border border-cyan-500/30 hover:border-cyan-400 transition-colors flex items-center gap-3 group">
-            <Phone className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
-            <div className="flex flex-col">
-              <span className="text-xs text-slate-400 font-sans">{lang === 'ar' ? 'الاتصال المباشر' : 'Direct Call'}</span>
-              <span className="text-slate-200 group-hover:text-cyan-400 font-bold text-sm">{p.phone}</span>
-            </div>
-          </a>
+          {/* Phone / WhatsApp */}
+          {p.phone && (
+            <a href={`tel:${rawPhone}`} className="p-5 rounded-lg bg-slate-900/60 border border-cyan-500/30 hover:border-cyan-400 transition-colors flex items-center gap-3 group">
+              <Phone className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+              <div className="flex flex-col">
+                <span className="text-xs text-slate-400 font-sans">{lang === 'ar' ? 'الاتصال المباشر / واتساب' : 'Direct Call / WhatsApp'}</span>
+                <span className="text-slate-200 group-hover:text-cyan-400 font-bold text-sm" dir="ltr">{p.phone}</span>
+              </div>
+            </a>
+          )}
 
-          <a href={gmailWebUrl} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
-            <Mail className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
-            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm truncate">{p.email}</span>
-          </a>
+          {/* Email */}
+          {p.email && (
+            <a href={gmailWebUrl} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
+              <Mail className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+              <div className="flex flex-col truncate">
+                <span className="text-xs text-slate-400 font-sans">{lang === 'ar' ? 'البريد الإلكتروني' : 'Email'}</span>
+                <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm truncate">{p.email}</span>
+              </div>
+            </a>
+          )}
 
-          <a href={p.linkedin} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
-            <Linkedin className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
-            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.linkedin}</span>
-          </a>
+          {/* LinkedIn */}
+          {p.linkedin && (
+            <a href={p.linkedin} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
+              <Linkedin className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+              <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.linkedin || 'LinkedIn'}</span>
+            </a>
+          )}
 
-          <a href={p.github} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
-            <Github className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
-            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.github}</span>
-          </a>
+          {/* GitHub */}
+          {p.github && (
+            <a href={p.github} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
+              <Github className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+              <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.github || 'GitHub'}</span>
+            </a>
+          )}
 
-          <a href={p.facebook} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
-            <Facebook className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
-            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.facebook}</span>
-          </a>
+          {/* Facebook */}
+          {p.facebook && (
+            <a href={p.facebook} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
+              <Facebook className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+              <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.facebook || 'Facebook'}</span>
+            </a>
+          )}
 
-          <a href={p.instagram} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
-            <Instagram className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
-            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.instagram}</span>
-          </a>
+          {/* Instagram */}
+          {p.instagram && (
+            <a href={p.instagram} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
+              <Instagram className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+              <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.instagram || 'Instagram'}</span>
+            </a>
+          )}
 
-          <a href={p.twitter} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group font-sans">
-            <Twitter className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
-            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.twitter}</span>
-          </a>
+          {/* Twitter / X */}
+          {p.twitter && (
+            <a href={p.twitter} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group font-sans">
+              <Twitter className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+              <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.twitter || 'Twitter'}</span>
+            </a>
+          )}
         </div>
       </div>
     </motion.section>
