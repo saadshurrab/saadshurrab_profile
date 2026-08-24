@@ -10,13 +10,14 @@ export const content = {
     },
     personalData: {
       name: "Saad Ahmed Saad Shurrab",
-      title: "Computer Science Student & Operations Support",
-      bio: "Sophomore Computer Science student at Al-Aqsa University (86.40% GPA). Blending a tech background with hands-on experience in customer service, admin support, and logistics. Dedicated to strong communication, efficiency, and outstanding client experience.",
-      location: "Gaza, Palestine",
+      age: "21 Years Old",
+      title: "Computer Science Student & Technical Operations Support",
+      bio: "A 21-year-old Computer Science student at Al-Aqsa University. I combine academic passion for software solutions with practical hands-on experience in customer support, administration, and field logistics. Dedicated to efficiency, adaptability, and creating meaningful impact through technology.",
+      location: "Gaza, Al-Rimal, Palestine",
       email: "s421078601@gmail.com",
-      phone: "+970 593612651",
+      phone: "0593612651",
       company: "Pure Vision Optical Supplies Co.",
-      role: "Office Assistant & Delivery Representative",
+      role: "Office Assistant & Logistics Representative",
       companyPeriod: "December 2025 – Present",
       university: "Al-Aqsa University",
       degree: "B.Sc. Computer Science (In Progress)",
@@ -35,64 +36,63 @@ export const content = {
       twitter: "https://x.com/SaadAhmedS1",
       readJourney: "Read My Journey",
       downloadCV: "Download CV",
-      viewProjects: "View Projects",
       education: "Education",
       experience: "Professional Experience",
-      expDesc: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies at Pure Vision Co. under complex operational conditions.",
+      expDesc: "Coordinated field delivery logistics, order management, and administrative support at Pure Vision Co. under complex operational conditions.",
       workHistory: [
         {
           company: "Open to New Opportunities",
           role: "Customer Service | Hospitality | Administrative & Tech Support",
           period: "Present",
           current: true,
-          description: "Available immediately for new roles in Customer Service, Hospitality, and Administrative Support, eager to deliver an exceptional experience and leverage my communication and organizational skills."
+          description: "Ready to join dynamic teams in customer operations, administration, or technical support, bringing adaptable communication skills and strong work ethics."
         },
         {
-          role: "Office Assistant & Delivery Representative",
+          role: "Office Assistant & Logistics Representative",
           company: "Pure Vision Optical Supplies Co.",
           period: "December 2025 – September 2026",
           current: false,
-          description: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies under complex operational conditions."
+          description: "Managed physical order dispatch, stock records, and administrative archiving under challenging operational field environments."
         },
         {
           role: "Bakery Worker",
           company: "Abu Diya Bakery",
           period: "1 week",
           current: false,
-          description: "Short-term production role. Did not continue due to demanding work conditions and high heat exposure."
+          description: "Short-term experience in intense daily operations, providing early perspective on adaptability and hard physical work."
         },
         {
           role: "Shipping Point Operator",
           company: "Local Shipping & Logistics Point",
           period: "1 year",
           current: false,
-          description: "Handled shipment intake, sorting, and coordination at a local shipping point for one year before transitioning to Pure Vision Optical Supplies Co."
+          description: "Handled package intake, categorization, and distribution logistics prior to joining Pure Vision Co."
         },
         {
           role: "Fire Suppression Equipment Technician",
           company: "Al-Ghusein Co. for Monitoring & Fire Extinguishing Systems",
           period: "1 year (during displacement)",
           current: false,
-          description: "First professional role, carried out during displacement. Prepared and serviced fire extinguishing equipment, gaining hands-on technical experience with safety systems under demanding circumstances."
+          description: "Gained foundational hands-on technical skills servicing safety and fire suppression systems under challenging conditions."
         }
       ]
     },
     storyData: {
-      badge: "Motivation & Challenge Story",
-      title: "The Resilience & Systems Journey",
-      subtitle: "From field logistics under disruption to software architecture and automated systems.",
+      badge: "A Story of Resilience & Growth",
+      title: "Turning Friction into Systems",
+      subtitle: "How field challenges shaped a developer's perspective on practical problem-solving.",
       paragraphs: [
         {
-          heading: "Overcoming Disruption & Rebuilding My Tools",
-          text: "During challenging circumstances, losing my primary device meant losing my direct gateway to coding and academic progress. Refusing to let my education halt, I worked in field operations as an Office Assistant and Delivery Representative at Pure Vision Optical Supplies Co. Working full days managing deliveries under failing infrastructure allowed me to secure my tools and resume self-directed computer science coursework."
+          heading: "Adaptability in the Face of Disruption",
+          text: "When severe circumstances disrupted my path and cost me my primary work device, my academic and coding journey hit a sudden halt. Instead of stepping back, I chose field work as a logistics representative at Pure Vision. Long hours on the road managing physical deliveries under strict constraints were not just a way to secure new tools, but a masterclass in patience and determination."
         },
         {
-          heading: "Engineering Insight From Field Operations",
-          text: "Tracking order deliveries and inventory manually on paper at Pure Vision revealed how inefficient non-digital systems truly are. Experiencing these operational bottlenecks firsthand, I designed and built an internal management platform for the company — handling inventory tracking, order processing, and client records — replacing the paper-based workflow with a structured database system."
+          heading: "Discovering Solutions in Real-World Bottlenecks",
+          text: "Navigating paper records and manual inventory on a daily basis highlighted the clear costs of inefficient operations. Experiencing these real-world bottlenecks firsthand transformed my technical perspective: code is not just syntax, but a tool to fix friction. This realization led me to build an internal management database system for the company to replace manual workflows entirely."
         },
         {
-          heading: "Building Practical Solutions",
-          text: "Noticing classmates missing crucial academic updates across scattered channels, I designed and coded an automated Academic Telegram Bot using Python and SQL from scratch—managing notification triggers, task tracking, and schedule data across course sections."
+          heading: "Building for Community & Academic Need",
+          text: "Observing fellow students struggling to track course deadlines and scattered exam schedules, I built a custom automated Telegram bot using Python and SQL from scratch. The takeaway of my journey remains simple: tools do not build solutions—resilience and a deep understanding of human operational needs do."
         }
       ]
     },
@@ -171,7 +171,7 @@ export const content = {
     },
     skillsData: {
       title: "Core Skills & Capabilities",
-      subtitle: "Technical proficiencies, database systems, and field logistics expertise.",
+      subtitle: "Technical proficiencies, database systems, and field operations expertise.",
       languagesTitle: "Languages",
       categories: [
         {
@@ -194,7 +194,7 @@ export const content = {
     },
     contactData: {
       title: "Get In Touch",
-      subtitle: "Open to academic opportunities, customer service, software engineering, and technical discussions.",
+      subtitle: "Available for phone calls, direct contact, administrative support roles, and software projects.",
       linkedin: "LinkedIn Profile",
       github: "GitHub Profile",
       facebook: "Facebook Profile",
@@ -209,12 +209,12 @@ export const content = {
     },
     meta: {
       titleSuffix: "Saad Shurrab",
-      about: { title: "Saad Shurrab — About", description: "Computer Science student and technical operations assistant. Systems architecture, databases, and automation." },
+      about: { title: "Saad Shurrab — About", description: "Computer Science student and technical operations assistant." },
       story: { title: "Saad Shurrab — Story", description: "The resilience and systems journey behind Saad Shurrab's technical work." },
       certificates: { title: "Saad Shurrab — Certificates", description: "Verified professional training and technical credentials." },
       projects: { title: "Saad Shurrab — Projects", description: "Systems and software built from field observations and academic needs." },
       skills: { title: "Saad Shurrab — Skills", description: "Programming, database systems, and technical operations expertise." },
-      contact: { title: "Saad Shurrab — Contact", description: "Get in touch for academic opportunities and software engineering collaborations." }
+      contact: { title: "Saad Shurrab — Contact", description: "Get in touch for academic opportunities and professional collaborations." }
     }
   },
   ar: {
@@ -228,11 +228,12 @@ export const content = {
     },
     personalData: {
       name: "سعد أحمد سعد شراب",
-      title: "طالب علوم حاسوب وخدمات دعم وإدارة",
-      bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى بمعدل تراكمي %86.40. أجمع بين الشغف بالحلول البرمجية والخبرة العملانية في خدمة العملاء، التنسيق الإداري، والعمل اللوجستي. أتمتع بمهارات تواصل عالية وقدرة على التنظيم وتقديم أفضل تجربة للمستخدم أو للعميل.",
-      location: "غزة، فلسطين",
+      age: "21 عاماً",
+      title: "طالب علوم حاسوب وخدمات دعم وإدارة تقنية",
+      bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى (العمر 21 عاماً). أجمع بين الشغف بالأكاديمية والحلول البرمجية، والخبرة الميدانية في خدمة العملاء، الدعم الإداري، والعمل اللوجستي. أتميز بالقدرة على التكيف، التواصل الفعال، وتحويل التحديات الميدانية إلى حلول عملية.",
+      location: "غزة، الرمال، فلسطين",
       email: "s421078601@gmail.com",
-      phone: "+970 593612651",
+      phone: "0593612651",
       company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
       role: "مساعد إداري ولوجستي ومندوب توصيل",
       companyPeriod: "ديسمبر 2025 – سبتمبر 2026",
@@ -253,7 +254,6 @@ export const content = {
       twitter: "https://x.com/SaadAhmedS1",
       readJourney: "اقرأ مسيرتي",
       downloadCV: "تحميل السيرة الذاتية",
-      viewProjects: "عرض المشاريع",
       education: "التعليم الأكاديمي",
       experience: "الخبرة المهنية",
       expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة.",
@@ -263,54 +263,54 @@ export const content = {
           role: "خدمة العملاء | الضيافة والاستقبال | الدعم الإداري والتقني",
           period: "الآن...",
           current: true,
-          description: "متاح فوراً للانضمام إلى فريق عمل جديد في مجالات خدمة العملاء والضيافة والأدوار الإدارية، متطلعاً لتقديم تجربة تميز واستثمار مهاراتي في التواصل والتنظيم."
+          description: "متاح فوراً للانضمام إلى فرق عمل في مجالات خدمة العملاء، الإدارة، والدعم التقني، مع الجاهزية لتقديم أفضل أداء واستثمار مهارات التواصل والتنظيم."
         },
         {
           role: "مساعد إداري ولوجستي ومندوب توصيل",
           company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
           period: "ديسمبر 2025 - سبتمبر 2026",
           current: false,
-          description: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في ظل ظروف تشغيلية معقدة."
+          description: "إدارة التوصيل الميداني، تنظيم سجلات الطلبات، والأرشفة الإدارية للشركة في ظل الظروف التشغيلية الصعبة."
         },
         {
           role: "عامل مخبز",
           company: "مخبز أبو دية",
           period: "أسبوع واحد",
           current: false,
-          description: "عمل قصير المدة بقسم الإنتاج. لم يستمر بسبب أجواء العمل الصعبة والتعرض العالي للحرارة."
+          description: "تجربة عمل ميدانية مكثفة أكسبتني تقدير الانضباط والمرونة في التعامل مع أجواء العمل الشاقة."
         },
         {
           role: "عامل في نقطة شحن",
           company: "نقطة شحن ولوجستيات محلية",
           period: "سنة واحدة",
           current: false,
-          description: "تولى استلام وفرز وتنسيق الشحنات بنقطة شحن محلية لمدة سنة، قبل الانتقال للعمل في شركة الرؤية النقية لمستلزمات البصريات."
+          description: "تولى استلام وفرز وتنسيق الشحنات بنقطة شحن محلية لمدة سنة قبل الانتقال إلى شركة الرؤية النقية."
         },
         {
           role: "فني تجهيز معدات إطفاء",
           company: "شركة الغصين لأنظمة المراقبة والإطفاء",
           period: "سنة واحدة (خلال فترة النزوح)",
           current: false,
-          description: "أول عمل مهني، تم خلال فترة النزوح. تجهيز وصيانة أجهزة الإطفاء، واكتساب خبرة عملية بمعدات السلامة في ظل ظروف صعبة."
+          description: "الخبرة المهنية الأولى، وتضمنت تجهيز وصيانة أجهزة الإطفاء ومعدات السلامة العامة في ظروف استثنائية."
         }
       ]
     },
     storyData: {
-      badge: "قصة التحدي والإصرار",
-      title: "رحلة الصمود وبناء الأنظمة",
-      subtitle: "من اللوجستيات الميدانية إلى هندسة البرمجيات والأنظمة المؤتمتة.",
+      badge: "قصة إصرار وبناء",
+      title: "من الصعوبات الميدانية إلى بناء الأنظمة",
+      subtitle: "كيف صقلت الظروف والتحديات رؤيتي في حل المشكلات التقنية.",
       paragraphs: [
         {
-          heading: "تجاوز العقبات وإعادة بناء الأدوات",
-          text: "خلال الظروف الصعبة، كان فقدان جهازي المحمول يعني فقدان وسيلتي المباشرة للبرمجة والمتابعة الأكاديمية. ورفضاً لتوقف مسيرتي، عملت في العمليات الميدانية كمساعد إداري ومندوب توصيل في شركة الرؤية النقية لمستلزمات مراكز البصريات. أتاح لي العمل اليومي لتأمين أداة عمل جديدة واستئناف دراسة علوم الحاسوب ذاتياً."
+          heading: "المواجهة وإعادة بناء الأدوات",
+          text: "عندما أدت الظروف الصعبة إلى فقدان جهازي المحمول، توقفت مسيرتي الأكاديمية والبرمجية بشكل مفاجئ. لم أقبل بالتوقف، فنزلت إلى الميدان كمساعد إداري ومندوب توصيل في شركة الرؤية النقية. كانت ساعات العمل الطويلة والجهد الميداني اليومي لتأمين جهاز جديد بمثابة اختبار حقيقي للصبر والرغبة في النجاح."
         },
         {
-          heading: "رؤية هندسية من واقع العمل الميداني",
-          text: "كشف لي تتبع طلبيات التوصيل والمخزون يدوياً على الورق في شركة الرؤية النقية عن مدى ضعف الأنظمة غير الرقمية. من خلال معايشة هذه الاختناقات الميدانية عن قرب، صممت وبنيت منصة إدارة داخلية للشركة — تتولى تتبع المخزون ومعالجة الطلبيات وسجلات العملاء — لتحل محل العمل الورقي اليدوي بنظام قاعدة بيانات منظم."
+          heading: "الرؤية البرمجية من قلب المعاناة الميدانية",
+          text: "أثناء عملي الميداني ومتابعتي للطلبيات يدوياً على الورق، لمست بنفسي حجم الضياع والبطء في الأنظمة غير الرقمية. هنا تغيرت رؤيتي للبرمجة؛ فلم تعد مجرد شفرات، بل وسيلة حقيقية لحل الاختناقات الميدانية. قادني هذا الإدراك لتصميم نظام إدارة داخلي للشركة يلغي السجلات الورقية ويؤتمت العمليات."
         },
         {
-          heading: "بناء حلول برمجية عملية",
-          text: "لاحظت تشتت زملائي في متابعة المواعيد الأكاديمية عبر القنوات المختلفة، فقمت بتصميم وبناء بوت تليجرام أكاديمي باستخدام Python و SQL من الصفر لإدارة التنبيهات، تتبع المهام، وجدول الاختبارات."
+          heading: "العبرة: البرمجة أداة والإصرار هو المحرك",
+          text: "عندما لاحظت تشتت زملائي في متابعة المواعيد والامتحانات الأكاديمية، قمت بتطوير بوت تليجرام مخصص ومؤتمت من الصفر لخدمتهم. العبرة من رحلتي هي أن الأدوات والتقنيات متوفرة دائماً، لكن الفارق الحقيقي يكمن في الإصرار، والفهم العميق لاحتياجات الناس الواقعية."
         }
       ]
     },
@@ -412,7 +412,7 @@ export const content = {
     },
     contactData: {
       title: "تواصل معي",
-      subtitle: "مرحباً بالفرص الأكاديمية، خدمة العملاء، التعاون في هندسة البرمجيات، والمناقشات التقنية.",
+      subtitle: "مرحب بالاتصال الهاتفي المباشر، والفرص الأكاديمية والمهنية في خدمة العملاء والدعم التقني.",
       linkedin: "LinkedIn",
       github: "GitHub",
       facebook: "فيسبوك",
