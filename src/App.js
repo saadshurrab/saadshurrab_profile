@@ -29,7 +29,8 @@ import {
   Download,
   Send,
   ExternalLink,
-  Menu
+  Menu,
+  User
 } from 'lucide-react';
 import { content } from './data';
 
@@ -78,6 +79,7 @@ function AboutPage({ t, lang }) {
 
           <div className="flex flex-wrap justify-center md:justify-start rtl:md:justify-start items-center gap-4 text-xs font-mono text-slate-400 pt-1">
             <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4 text-cyan-400" /> {p.location}</span>
+            <span className="flex items-center gap-1.5"><User className="w-4 h-4 text-cyan-400" /> {p.ageLabel}</span>
           </div>
 
           <div className="pt-3 flex flex-wrap justify-center md:justify-start rtl:md:justify-start items-center gap-3">
@@ -95,12 +97,6 @@ function AboutPage({ t, lang }) {
               >
                 <Download className="w-4 h-4 animate-bounce" /> {p.downloadCV || (lang === 'ar' ? 'تحميل السيرة الذاتية' : 'Download CV')}
               </a>
-            </motion.div>
-
-            <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
-              <Link to="/projects" className="px-5 py-2.5 rounded-lg border border-slate-800 hover:border-slate-700 hover:bg-slate-900 text-slate-300 font-medium transition-colors text-sm inline-block">
-                {p.viewProjects}
-              </Link>
             </motion.div>
           </div>
         </div>
@@ -207,7 +203,7 @@ function StoryPage({ t }) {
             <h3 className="text-lg font-bold text-slate-100 flex items-center gap-2">
               <span className="text-cyan-400 font-mono text-sm">0{idx + 1}.</span> {p.heading}
             </h3>
-            <p className="text-sm text-slate-300 leading-relaxed pl-2 rtl:pl-0 rtl:pr-2">
+            <p className="text-sm text-slate-300 leading-relaxed pl-2 rtl:pl-0 rtl:pr-2 whitespace-pre-line">
               {p.text}
             </p>
           </motion.div>
@@ -467,7 +463,7 @@ function SkillsPage({ t }) {
 function ContactPage({ t }) {
   const p = t.personalData;
   const ct = t.contactData;
-  const whatsappNumber = p.phone.replace(/[^0-9]/g, '');
+  const rawPhone = p.phone.replace(/[^0-9]/g, '');
   const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(p.email)}`;
 
   return (
@@ -479,14 +475,17 @@ function ContactPage({ t }) {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-sm">
+          <a href={`tel:${rawPhone}`} className="p-5 rounded-lg bg-slate-900/60 border border-cyan-500/30 hover:border-cyan-400 transition-colors flex items-center gap-3 group">
+            <Phone className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+            <div className="flex flex-col">
+              <span className="text-xs text-slate-400 font-sans">{ct.callDirect}</span>
+              <span className="text-slate-200 group-hover:text-cyan-400 font-bold text-sm">{p.phone}</span>
+            </div>
+          </a>
+
           <a href={gmailWebUrl} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
             <Mail className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
             <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm truncate">{p.email}</span>
-          </a>
-
-          <a href={`https://wa.me/${whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
-            <Phone className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
-            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{p.phone}</span>
           </a>
 
           <a href={p.linkedin} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
@@ -557,7 +556,7 @@ function App() {
       const saved = window.localStorage.getItem('preferredLang');
       if (saved === 'en' || saved === 'ar') return saved;
     }
-    return 'en';
+    return 'ar';
   });
   const [menuOpen, setMenuOpen] = useState(false);
 
