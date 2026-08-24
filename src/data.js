@@ -10,12 +10,11 @@ export const content = {
     },
     personalData: {
       name: "Saad Ahmed Saad Shurrab",
-      title: "Computer Science Student & Technical Operations Assistant",
+      title: "Computer Science Student & Operations Support",
       bio: "Sophomore Computer Science student at Al-Aqsa University (86.40% GPA). Blending a tech background with hands-on experience in customer service, admin support, and logistics. Dedicated to strong communication, efficiency, and outstanding client experience.",
       location: "Gaza, Palestine",
       email: "s421078601@gmail.com",
       phone: "+970 593612651",
-      dob: "26/10/2004",
       company: "Pure Vision Optical Supplies Co.",
       role: "Office Assistant & Delivery Representative",
       companyPeriod: "December 2025 – Present",
@@ -36,20 +35,22 @@ export const content = {
       twitter: "https://x.com/SaadAhmedS1",
       readJourney: "Read My Journey",
       downloadCV: "Download CV",
+      viewProjects: "View Projects",
       education: "Education",
       experience: "Professional Experience",
       expDesc: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies at Pure Vision Co. under complex operational conditions.",
       workHistory: [
         {
-          role: "Available immediately for new roles in Customer Service, Hospitality, and Administrative Support, eager to deliver an exceptional experience and leverage my communication and organizational skills.",
-  company: "Seeking New Opportunities: ",
-  period: " Present ",
-  current: true,
-},
+          company: "Open to New Opportunities",
+          role: "Customer Service | Hospitality | Administrative & Tech Support",
+          period: "Present",
+          current: true,
+          description: "Available immediately for new roles in Customer Service, Hospitality, and Administrative Support, eager to deliver an exceptional experience and leverage my communication and organizational skills."
+        },
         {
           role: "Office Assistant & Delivery Representative",
           company: "Pure Vision Optical Supplies Co.",
-          period: "December 2025 – Present",
+          period: "December 2025 – September 2026",
           current: false,
           description: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies under complex operational conditions."
         },
@@ -182,8 +183,8 @@ export const content = {
           items: ["Oracle APEX", "SQL / Quick SQL", "Relational Database Schema Design", "Query Optimization"]
         },
         {
-          category: "Operations & Technical Tools",
-          items: ["ICDL Certified", "Logistics Operations", "Git & GitHub", "Microsoft Office", "Field Coordination"]
+          category: "Operations & Professional Tools",
+          items: ["ICDL Certified", "Customer Service & Hospitality", "Logistics Operations", "Git & GitHub", "Microsoft Office", "Field Coordination"]
         }
       ],
       languages: [
@@ -193,7 +194,7 @@ export const content = {
     },
     contactData: {
       title: "Get In Touch",
-      subtitle: "Open to academic opportunities, software engineering collaborations, and technical discussions.",
+      subtitle: "Open to academic opportunities, customer service, software engineering, and technical discussions.",
       linkedin: "LinkedIn Profile",
       github: "GitHub Profile",
       facebook: "Facebook Profile",
@@ -227,15 +228,14 @@ export const content = {
     },
     personalData: {
       name: "سعد أحمد سعد شراب",
-      title: "طالب علوم حاسوب ومساعد عمليات تقنية",
+      title: "طالب علوم حاسوب وخدمات دعم وإدارة",
       bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى بمعدل تراكمي %86.40. أجمع بين الشغف بالحلول البرمجية والخبرة العملانية في خدمة العملاء، التنسيق الإداري، والعمل اللوجستي. أتمتع بمهارات تواصل عالية وقدرة على التنظيم وتقديم أفضل تجربة للمستخدم أو للعميل.",
       location: "غزة، فلسطين",
       email: "s421078601@gmail.com",
       phone: "+970 593612651",
-      dob: "26/10/2004",
       company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
       role: "مساعد إداري ولوجستي ومندوب توصيل",
-      companyPeriod: "ديسمبر 2025 – الحالي",
+      companyPeriod: "ديسمبر 2025 – سبتمبر 2026",
       university: "جامعة الأقصى",
       degree: "بكالوريوس علوم الحاسوب (مستمر)",
       cgpa: "86.40%",
@@ -253,20 +253,22 @@ export const content = {
       twitter: "https://x.com/SaadAhmedS1",
       readJourney: "اقرأ مسيرتي",
       downloadCV: "تحميل السيرة الذاتية",
+      viewProjects: "عرض المشاريع",
       education: "التعليم الأكاديمي",
       experience: "الخبرة المهنية",
       expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة.",
       workHistory: [
         {
-          role: "متاح فوراً للانضمام إلى فريق عمل جديد في مجالات خدمة العملاء والضيافة والأدوار الإدارية، متطلعاً لتقديم تجربة تميز واستثمار مهاراتي في التواصل والتنظيم",
-        company: "البحث عن فرص جديدة : ",
-          period: " الأن ... ",
-           current: true,
-          },
+          company: "متاح لفرص عمل جديدة",
+          role: "خدمة العملاء | الضيافة والاستقبال | الدعم الإداري والتقني",
+          period: "الآن...",
+          current: true,
+          description: "متاح فوراً للانضمام إلى فريق عمل جديد في مجالات خدمة العملاء والضيافة والأدوار الإدارية، متطلعاً لتقديم تجربة تميز واستثمار مهاراتي في التواصل والتنظيم."
+        },
         {
           role: "مساعد إداري ولوجستي ومندوب توصيل",
           company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
-          period: "ديسمبر 2025 -  سبتمبر 2026",
+          period: "ديسمبر 2025 - سبتمبر 2026",
           current: false,
           description: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في ظل ظروف تشغيلية معقدة."
         },
@@ -321,7 +323,7 @@ export const content = {
           title: "الرخصة الدولية لقيادة الحاسوب (ICDL)",
           issuer: "مركز Learn More للتدريب والتطوير",
           accreditation: "البورد الكندي (Reg No. 56009111acc) & ISO 21001",
-          duration: "ساعة تدريبية 20 (21/12/2025 – 15/01/2026) ",
+          duration: "20 ساعة تدريبية (21/12/2025 – 15/01/2026)",
           description: "تدريب عملي شامل يغطي مهارات تطبيقات الحاسوب الأساسية، الاتصالات الرقمية، وأدوات أتمتة المكاتب.",
           badge: "شهادة معتمدة",
           image: "/icdl.jpg"
@@ -399,8 +401,8 @@ export const content = {
           items: ["Oracle APEX", "SQL / Quick SQL", "Relational Database Schema Design", "Query Optimization"]
         },
         {
-          category: "العمليات والأدوات التقنية",
-          items: ["ICDL Certified", "Logistics Operations", "Git & GitHub", "Microsoft Office", "Field Coordination"]
+          category: "المهارات والعمليات الإدارية",
+          items: ["ICDL Certified", "خدمة العملاء والضيافة", "العمليات اللوجستية", "Git & GitHub", "Microsoft Office", "التنسيق الميداني"]
         }
       ],
       languages: [
@@ -410,7 +412,7 @@ export const content = {
     },
     contactData: {
       title: "تواصل معي",
-      subtitle: "مرحبا بالفرص الأكاديمية، التعاون في هندسة البرمجيات، والمناقشات التقنية.",
+      subtitle: "مرحباً بالفرص الأكاديمية، خدمة العملاء، التعاون في هندسة البرمجيات، والمناقشات التقنية.",
       linkedin: "LinkedIn",
       github: "GitHub",
       facebook: "فيسبوك",
@@ -425,12 +427,12 @@ export const content = {
     },
     meta: {
       titleSuffix: "سعد شراب",
-      about: { title: "سعد شراب — نبذة عني", description: "طالب علوم حاسوب ومساعد عمليات تقنية. هندسة الأنظمة، قواعد البيانات، والأتمتة." },
+      about: { title: "سعد شراب — نبذة عني", description: "طالب علوم حاسوب وخدمات دعم وإدارة." },
       story: { title: "سعد شراب — قصتي", description: "رحلة الصمود وبناء الأنظمة وراء العمل التقني لسعد شراب." },
       certificates: { title: "سعد شراب — الشهادات", description: "شهادات تدريبية معتمدة ومؤهلات تقنية." },
       projects: { title: "سعد شراب — المشاريع", description: "أنظمة وبرمجيات تم تطويرها بناءً على الملاحظات الميدانية والاحتياجات الأكاديمية." },
-      skills: { title: "سعد شراب — المهارات", description: "البرمجة، أنظمة قواعد البيانات، والخبرة التقنية." },
-      contact: { title: "سعد شراب — التواصل", description: "تواصل معي للفرص الأكاديمية والتعاون في هندسة البرمجيات." }
+      skills: { title: "سعد شراب — المهارات", description: "البرمجة، أنظمة قواعد البيانات، والخبرة التقنية والإدارية." },
+      contact: { title: "سعد شراب — التواصل", description: "تواصل معي للفرص الأكاديمية والتعاون في العمل والبرمجيات." }
     }
   }
 };
