@@ -12,6 +12,9 @@ import {
   CheckCircle2, 
   Github, 
   Linkedin, 
+  Facebook,
+  Instagram,
+  Twitter,
   Briefcase, 
   Building2, 
   GraduationCap, 
@@ -477,6 +480,21 @@ function ContactPage({ t }) {
           <a href={p.github} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
             <Github className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
             <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.github}</span>
+          </a>
+
+          <a href={p.facebook} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
+            <Facebook className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.facebook}</span>
+          </a>
+
+          <a href={p.instagram} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
+            <Instagram className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.instagram}</span>
+          </a>
+
+          <a href={p.twitter} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
+            <Twitter className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
+            <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.twitter}</span>
           </a>
         </div>
       </div>

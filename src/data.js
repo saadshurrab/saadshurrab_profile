@@ -25,6 +25,9 @@ export const content = {
       creditsCompleted: "66 Credit Hours Completed",
       github: "https://github.com/saadshurrab",
       linkedin: "https://ps.linkedin.com/in/saad-ahmed-shurrab-99099841b",
+      facebook: "https://www.facebook.com/saad.ahmed.shurrab",
+      instagram: "https://www.instagram.com/saad__shurrab/?__pwa=1",
+      twitter: "https://x.com/SaadAhmedS1",
       readJourney: "Read My Journey",
       viewProjects: "View Projects",
       downloadCV: "Download CV",
@@ -52,6 +55,13 @@ export const content = {
           period: "1 year",
           current: false,
           description: "Handled shipment intake, sorting, and coordination at a local shipping point for one year before transitioning to Pure Vision Optical Supplies Co."
+        },
+        {
+          role: "Fire Suppression Equipment Technician",
+          company: "Al-Ghusein Co. for Monitoring & Fire Extinguishing Systems",
+          period: "1.5 years (during displacement)",
+          current: false,
+          description: "First professional role, carried out during displacement. Prepared and serviced fire extinguishing equipment, gaining hands-on technical experience with safety systems under demanding circumstances."
         }
       ]
     },
@@ -175,7 +185,10 @@ export const content = {
       title: "Get In Touch",
       subtitle: "Open to academic opportunities, software engineering collaborations, and technical discussions.",
       linkedin: "LinkedIn Profile",
-      github: "GitHub Profile"
+      github: "GitHub Profile",
+      facebook: "Facebook Profile",
+      instagram: "Instagram Profile",
+      twitter: "X (Twitter) Profile"
     }
   },
   ar: {
@@ -204,6 +217,9 @@ export const content = {
       creditsCompleted: "تم إنجاز 66 ساعة معتمدة",
       github: "https://github.com/saadshurrab",
       linkedin: "https://ps.linkedin.com/in/saad-ahmed-shurrab-99099841b",
+      facebook: "https://www.facebook.com/saad.ahmed.shurrab",
+      instagram: "https://www.instagram.com/saad__shurrab/?__pwa=1",
+      twitter: "https://x.com/SaadAhmedS1",
       readJourney: "اقرأ مسيرتي",
       viewProjects: "عرض المشاريع",
       downloadCV: "تحميل السيرة الذاتية",
@@ -231,6 +247,13 @@ export const content = {
           period: "سنة واحدة",
           current: false,
           description: "تولى استلام وفرز وتنسيق الشحنات بنقطة شحن محلية لمدة سنة، قبل الانتقال للعمل في شركة الرؤية النقية لمستلزمات البصريات."
+        },
+        {
+          role: "فني تجهيز معدات إطفاء",
+          company: "شركة الغصين لأنظمة المراقبة والإطفاء",
+          period: "سنة ونصف (خلال فترة النزوح)",
+          current: false,
+          description: "أول عمل مهني، تم خلال فترة النزوح. تجهيز وصيانة أجهزة الإطفاء، واكتساب خبرة عملية بمعدات السلامة في ظل ظروف صعبة."
         }
       ]
     },
@@ -354,7 +377,10 @@ export const content = {
       title: "تواصل معي",
       subtitle: "مرحبا بالفرص الأكاديمية، التعاون في هندسة البرمجيات، والمناقشات التقنية.",
       linkedin: "LinkedIn",
-      github: "GitHub"
+      github: "GitHub",
+      facebook: "فيسبوك",
+      instagram: "انستغرام",
+      twitter: "منصة X (تويتر)"
     }
   }
 };
