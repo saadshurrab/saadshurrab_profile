@@ -79,7 +79,7 @@ function AboutPage({ t, lang }) {
 
           <div className="flex flex-wrap justify-center md:justify-start rtl:md:justify-start items-center gap-4 text-xs font-mono text-slate-400 pt-1">
             <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4 text-cyan-400" /> {p.location}</span>
-            <span className="flex items-center gap-1.5"><User className="w-4 h-4 text-cyan-400" /> {p.ageLabel}</span>
+            <span className="flex items-center gap-1.5"><User className="w-4 h-4 text-cyan-400" /> {p.age}</span>
           </div>
 
           <div className="pt-3 flex flex-wrap justify-center md:justify-start rtl:md:justify-start items-center gap-3">
@@ -95,7 +95,7 @@ function AboutPage({ t, lang }) {
                 download={cvFileName}
                 className="px-5 py-2.5 rounded-lg bg-slate-900 border border-cyan-500/40 hover:border-cyan-400 hover:bg-slate-800 text-cyan-400 font-medium transition-colors text-sm inline-flex items-center gap-2 shadow-sm"
               >
-                <Download className="w-4 h-4 animate-bounce" /> {p.downloadCV || (lang === 'ar' ? 'تحميل السيرة الذاتية' : 'Download CV')}
+                <Download className="w-4 h-4 animate-bounce" /> {p.downloadCV}
               </a>
             </motion.div>
           </div>
@@ -113,10 +113,10 @@ function AboutPage({ t, lang }) {
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
             <h3 className="font-bold text-slate-100 text-base">{p.degree}</h3>
             <span className="text-xs font-mono text-cyan-400 bg-cyan-950/80 border border-cyan-800/50 px-2.5 py-1 rounded-md w-fit">
-              2022 – Present
+              {p.university}
             </span>
           </div>
-          <p className="text-xs font-mono text-slate-300">{p.university} — CGPA: <span className="text-cyan-400 font-bold">{p.cgpa}</span></p>
+          <p className="text-xs font-mono text-slate-300">CGPA: <span className="text-cyan-400 font-bold">{p.cgpa}</span></p>
           <p className="text-xs text-slate-400">{p.creditsCompleted}</p>
         </div>
 
@@ -141,6 +141,8 @@ function AboutPage({ t, lang }) {
           <Briefcase className="w-6 h-6 text-cyan-400" />
           <h2 className="text-xl font-bold text-slate-100">{p.experience}</h2>
         </div>
+
+        <p className="text-xs text-slate-400 leading-relaxed">{p.expDesc}</p>
 
         <div className="relative space-y-4 ps-6 border-s-2 border-slate-800">
           {(p.workHistory || []).map((job, jIdx) => (
@@ -214,7 +216,7 @@ function StoryPage({ t }) {
 }
 
 // --- Certificates Page ---
-function CertificatesPage({ t }) {
+function CertificatesPage({ t, lang }) {
   const [selectedImage, setSelectedImage] = useState(null);
   const c = t.certificatesData;
 
@@ -272,10 +274,11 @@ function CertificatesPage({ t }) {
               )}
 
               <div className="space-y-1 text-xs font-mono text-slate-300">
-                <p><strong className="text-slate-200">Issuer:</strong> {cert.issuer}</p>
-                {cert.accreditation && <p className="text-cyan-400/90"><strong className="text-slate-200">Accreditation:</strong> {cert.accreditation}</p>}
-                {cert.duration && <p><strong className="text-slate-200">Duration:</strong> {cert.duration}</p>}
-                {cert.trainer && <p><strong className="text-slate-200">Trainer:</strong> {cert.trainer}</p>}
+                <p><strong className="text-slate-200">{lang === 'ar' ? 'الجهة المصدرة:' : 'Issuer:'}</strong> {cert.issuer}</p>
+                {cert.accreditation && <p className="text-cyan-400/90"><strong className="text-slate-200">{lang === 'ar' ? 'الاعتماد:' : 'Accreditation:'}</strong> {cert.accreditation}</p>}
+                {cert.type && <p><strong className="text-slate-200">{lang === 'ar' ? 'نوع التدريب:' : 'Type:'}</strong> {cert.type}</p>}
+                {cert.duration && <p><strong className="text-slate-200">{lang === 'ar' ? 'المدة:' : 'Duration:'}</strong> {cert.duration}</p>}
+                {cert.trainer && <p><strong className="text-slate-200">{lang === 'ar' ? 'المدرب:' : 'Trainer:'}</strong> {cert.trainer}</p>}
               </div>
 
               <p className="text-xs text-slate-300 leading-relaxed pt-1">{cert.description}</p>
@@ -460,7 +463,7 @@ function SkillsPage({ t }) {
 }
 
 // --- Contact Page ---
-function ContactPage({ t }) {
+function ContactPage({ t, lang }) {
   const p = t.personalData;
   const ct = t.contactData;
   const rawPhone = p.phone.replace(/[^0-9]/g, '');
@@ -478,7 +481,7 @@ function ContactPage({ t }) {
           <a href={`tel:${rawPhone}`} className="p-5 rounded-lg bg-slate-900/60 border border-cyan-500/30 hover:border-cyan-400 transition-colors flex items-center gap-3 group">
             <Phone className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
             <div className="flex flex-col">
-              <span className="text-xs text-slate-400 font-sans">{ct.callDirect}</span>
+              <span className="text-xs text-slate-400 font-sans">{lang === 'ar' ? 'الاتصال المباشر' : 'Direct Call'}</span>
               <span className="text-slate-200 group-hover:text-cyan-400 font-bold text-sm">{p.phone}</span>
             </div>
           </a>
@@ -508,7 +511,7 @@ function ContactPage({ t }) {
             <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.instagram}</span>
           </a>
 
-          <a href={p.twitter} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group">
+          <a href={p.twitter} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-slate-800/80 hover:border-cyan-500/50 transition-colors flex items-center gap-3 group font-sans">
             <Twitter className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
             <span className="text-slate-300 group-hover:text-cyan-400 transition-colors text-xs sm:text-sm">{ct.twitter}</span>
           </a>
@@ -702,10 +705,10 @@ function App() {
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<AboutPage t={t} lang={lang} />} />
             <Route path="/story" element={<StoryPage t={t} />} />
-            <Route path="/certificates" element={<CertificatesPage t={t} />} />
+            <Route path="/certificates" element={<CertificatesPage t={t} lang={lang} />} />
             <Route path="/projects" element={<ProjectsPage t={t} />} />
             <Route path="/skills" element={<SkillsPage t={t} />} />
-            <Route path="/contact" element={<ContactPage t={t} />} />
+            <Route path="/contact" element={<ContactPage t={t} lang={lang} />} />
             <Route path="*" element={<NotFoundPage t={t} />} />
           </Routes>
         </AnimatePresence>
