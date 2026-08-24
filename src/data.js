@@ -11,7 +11,7 @@ export const content = {
     personalData: {
       name: "Saad Ahmed Saad Shurrab",
       title: "Computer Science Student & Technical Operations Assistant",
-      bio: "Second-year Computer Science student at Al-Aqsa University with an 86.40% CGPA. Driven by system architectural principles, database optimization, software development, and practical automation.",
+      bio: "Sophomore Computer Science student at Al-Aqsa University (86.40% GPA). Blending a tech background with hands-on experience in customer service, admin support, and logistics. Dedicated to strong communication, efficiency, and outstanding client experience.",
       location: "Gaza, Palestine",
       email: "s421078601@gmail.com",
       phone: "+970 593612651",
@@ -35,7 +35,6 @@ export const content = {
       instagram: "https://www.instagram.com/saad__shurrab/?__pwa=1",
       twitter: "https://x.com/SaadAhmedS1",
       readJourney: "Read My Journey",
-      viewProjects: "View Projects",
       downloadCV: "Download CV",
       education: "Education",
       experience: "Professional Experience",
@@ -229,7 +228,7 @@ export const content = {
     personalData: {
       name: "سعد أحمد سعد شراب",
       title: "طالب علوم حاسوب ومساعد عمليات تقنية",
-      bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى بمعدل تراكمي 86.40%. شغوف بهندسة الأنظمة، تحسين قواعد البيانات، تطوير البرمجيات، والحلول البرمجية المؤتمتة.",
+      bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى بمعدل تراكمي %86.40. أجمع بين الشغف بالحلول البرمجية والخبرة العملانية في خدمة العملاء، التنسيق الإداري، والعمل اللوجستي. أتمتع بمهارات تواصل عالية وقدرة على التنظيم وتقديم أفضل تجربة للمستخدم أو للعميل.",
       location: "غزة، فلسطين",
       email: "s421078601@gmail.com",
       phone: "+970 593612651",
@@ -253,7 +252,6 @@ export const content = {
       instagram: "https://www.instagram.com/saad__shurrab/?__pwa=1",
       twitter: "https://x.com/SaadAhmedS1",
       readJourney: "اقرأ مسيرتي",
-      viewProjects: "عرض المشاريع",
       downloadCV: "تحميل السيرة الذاتية",
       education: "التعليم الأكاديمي",
       experience: "الخبرة المهنية",
