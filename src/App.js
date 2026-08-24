@@ -20,8 +20,6 @@ import {
   GraduationCap, 
   Award, 
   Globe, 
-  Calendar, 
-  Compass, 
   Sparkles, 
   Flame, 
   BadgeCheck, 
@@ -45,7 +43,6 @@ const pageVariants = {
 function AboutPage({ t, lang }) {
   const p = t.personalData;
   
-  // تحديد مسار الملف واسمه بناءً على اللغة الحالية
   const cvPath = lang === 'ar' ? '/cv-ar.pdf' : '/cv-en.pdf';
   const cvFileName = lang === 'ar' ? 'Saad_Shurrab_CV_AR.pdf' : 'Saad_Shurrab_CV_EN.pdf';
 
@@ -81,7 +78,6 @@ function AboutPage({ t, lang }) {
 
           <div className="flex flex-wrap justify-center md:justify-start rtl:md:justify-start items-center gap-4 text-xs font-mono text-slate-400 pt-1">
             <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4 text-cyan-400" /> {p.location}</span>
-            <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-cyan-400" /> {p.dob}</span>
           </div>
 
           <div className="pt-3 flex flex-wrap justify-center md:justify-start rtl:md:justify-start items-center gap-3">
@@ -91,7 +87,6 @@ function AboutPage({ t, lang }) {
               </Link>
             </motion.div>
 
-            {/* زر تنزيل السيرة الذاتية PDF - معدل ليدعم النسختين */}
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}>
               <a 
                 href={cvPath} 
@@ -171,7 +166,7 @@ function AboutPage({ t, lang }) {
                     {job.period}
                   </span>
                 </div>
-                <p className="text-xs font-mono text-slate-300">{job.role}</p>
+                {job.role && <p className="text-xs font-mono text-cyan-300 font-semibold">{job.role}</p>}
                 <p className="text-xs text-slate-400 leading-relaxed">
                   {job.description}
                 </p>
@@ -194,7 +189,7 @@ function StoryPage({ t }) {
           <Sparkles className="w-3.5 h-3.5" /> {s.badge}
         </div>
         <h2 className="text-3xl font-bold text-slate-100 flex items-center gap-3">
-          <Compass className="w-7 h-7 text-cyan-400" /> {s.title}
+          <Globe className="w-7 h-7 text-cyan-400" /> {s.title}
         </h2>
         <p className="text-slate-400 text-sm">{s.subtitle}</p>
       </div>
@@ -557,7 +552,6 @@ function NotFoundPage({ t }) {
 
 function App() {
   const location = useLocation();
-  // استرجاع اللغة المحفوظة من المتصفح، أو الإنجليزية كافتراضي
   const [lang, setLang] = useState(() => {
     if (typeof window !== 'undefined') {
       const saved = window.localStorage.getItem('preferredLang');
@@ -571,7 +565,6 @@ function App() {
     setLang((prev) => (prev === 'en' ? 'ar' : 'en'));
   };
 
-  // حفظ اختيار اللغة كل ما تتغير
   useEffect(() => {
     window.localStorage.setItem('preferredLang', lang);
   }, [lang]);
@@ -582,7 +575,6 @@ function App() {
 
   const t = content[lang];
 
-  // تحديث عنوان الصفحة ووصف الـ meta tag حسب الصفحة الحالية
   useEffect(() => {
     const metaByPath = {
       '/': t.meta.about,
@@ -654,7 +646,6 @@ function App() {
               })}
             </nav>
 
-            {/* Language Switcher Button */}
             <button
               onClick={toggleLanguage}
               className="px-2.5 py-1.5 rounded-md bg-slate-900 border border-slate-700/60 text-cyan-400 hover:bg-slate-800 hover:border-cyan-500/50 transition-colors text-xs font-mono flex items-center gap-1.5 shrink-0"
@@ -664,7 +655,6 @@ function App() {
               <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
             </button>
 
-            {/* Mobile Hamburger Toggle */}
             <button
               onClick={() => setMenuOpen((prev) => !prev)}
               className="md:hidden p-2 rounded-md bg-slate-900 border border-slate-700/60 text-cyan-400 hover:bg-slate-800 hover:border-cyan-500/50 transition-colors shrink-0"
@@ -676,7 +666,6 @@ function App() {
           </div>
         </div>
 
-        {/* Mobile Dropdown Menu */}
         <AnimatePresence>
           {menuOpen && (
             <motion.nav
@@ -712,7 +701,6 @@ function App() {
       <main className="max-w-5xl w-full mx-auto px-4 sm:px-6 py-8 sm:py-12 relative z-10 my-auto">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
-            {/* تم تمرير lang هنا لمكون AboutPage */}
             <Route path="/" element={<AboutPage t={t} lang={lang} />} />
             <Route path="/story" element={<StoryPage t={t} />} />
             <Route path="/certificates" element={<CertificatesPage t={t} />} />
