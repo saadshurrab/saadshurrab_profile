@@ -634,7 +634,7 @@ function App() {
       </main>
 
       <footer className="border-t border-slate-800/60 py-6 text-center text-xs font-mono text-slate-500 relative z-10">
-        © {new Date().getFullYear()} {t.personalData.name}. Built with React & Framer Motion.
+        © {new Date().getFullYear()} {t.personalData.name}. جميع الحقوق محفوظة.
       </footer>
     </div>
   );
