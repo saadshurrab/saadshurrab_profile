@@ -10,9 +10,9 @@ export const content = {
     },
     personalData: {
       name: "Saad Ahmed Saad Shurrab",
-      age: "21 Years Old",
+      age: "22 Years Old",
       title: "Computer Science Student & Technical Operations Support",
-      bio: "A 21-year-old Computer Science student at Al-Aqsa University. I combine academic passion for software solutions with practical hands-on experience in customer support, administration, and field logistics. Dedicated to efficiency, adaptability, and creating meaningful impact through technology.",
+      bio: "A Computer Science student at Al-Aqsa University. I combine academic passion for software solutions with practical hands-on experience in customer support, administration, and field logistics. Dedicated to efficiency, adaptability, and creating meaningful impact through technology.",
       location: "Gaza, Al-Rimal, Palestine",
       email: "s421078601@gmail.com",
       phone: "0593612651",
@@ -228,9 +228,9 @@ export const content = {
     },
     personalData: {
       name: "سعد أحمد سعد شراب",
-      age: "21 عاماً",
+      age: "22 عاماً",
       title: "طالب علوم حاسوب وخدمات دعم وإدارة تقنية",
-      bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى (العمر 21 عاماً). أجمع بين الشغف بالأكاديمية والحلول البرمجية، والخبرة الميدانية في خدمة العملاء، الدعم الإداري، والعمل اللوجستي. أتميز بالقدرة على التكيف، التواصل الفعال، وتحويل التحديات الميدانية إلى حلول عملية.",
+      bio: "طالب علوم حاسوب في السنة الثانية بجامعة الأقصى . أجمع بين الشغف بالأكاديمية والحلول البرمجية، والخبرة الميدانية في خدمة العملاء، الدعم الإداري، والعمل اللوجستي. أتميز بالقدرة على التكيف، التواصل الفعال، وتحويل التحديات الميدانية إلى حلول عملية.",
       location: "غزة، الرمال، فلسطين",
       email: "s421078601@gmail.com",
       phone: "0593612651",
