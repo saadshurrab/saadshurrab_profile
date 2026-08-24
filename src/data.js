@@ -30,7 +30,30 @@ export const content = {
       downloadCV: "Download CV",
       education: "Education",
       experience: "Professional Experience",
-      expDesc: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies at Pure Vision Co. under complex operational conditions."
+      expDesc: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies at Pure Vision Co. under complex operational conditions.",
+      workHistory: [
+        {
+          role: "Office Assistant & Delivery Representative",
+          company: "Pure Vision Optical Supplies Co.",
+          period: "December 2025 – Present",
+          current: true,
+          description: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies under complex operational conditions."
+        },
+        {
+          role: "Bakery Worker",
+          company: "Abu Diya Bakery",
+          period: "1 week",
+          current: false,
+          description: "Short-term production role. Did not continue due to demanding work conditions and high heat exposure."
+        },
+        {
+          role: "Shipping Point Operator",
+          company: "Local Shipping & Logistics Point",
+          period: "1 year",
+          current: false,
+          description: "Handled shipment intake, sorting, and coordination at a local shipping point for one year before transitioning to Pure Vision Optical Supplies Co."
+        }
+      ]
     },
     storyData: {
       badge: "Motivation & Challenge Story",
@@ -186,7 +209,30 @@ export const content = {
       downloadCV: "تحميل السيرة الذاتية",
       education: "التعليم الأكاديمي",
       experience: "الخبرة المهنية",
-      expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة."
+      expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة.",
+      workHistory: [
+        {
+          role: "مساعد إداري ولوجستي ومندوب توصيل",
+          company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
+          period: "ديسمبر 2025 – الحالي",
+          current: true,
+          description: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في ظل ظروف تشغيلية معقدة."
+        },
+        {
+          role: "عامل مخبز",
+          company: "مخبز أبو دية",
+          period: "أسبوع واحد",
+          current: false,
+          description: "عمل قصير المدة بقسم الإنتاج. لم يستمر بسبب أجواء العمل الصعبة والتعرض العالي للحرارة."
+        },
+        {
+          role: "عامل في نقطة شحن",
+          company: "نقطة شحن ولوجستيات محلية",
+          period: "سنة واحدة",
+          current: false,
+          description: "تولى استلام وفرز وتنسيق الشحنات بنقطة شحن محلية لمدة سنة، قبل الانتقال للعمل في شركة الرؤية النقية لمستلزمات البصريات."
+        }
+      ]
     },
     storyData: {
       badge: "قصة التحدي والإصرار",

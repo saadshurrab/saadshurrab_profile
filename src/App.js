@@ -27,7 +27,8 @@ import {
   Languages,
   Download,
   Send,
-  ExternalLink
+  ExternalLink,
+  Menu
 } from 'lucide-react';
 import { content } from './data';
 
@@ -126,27 +127,40 @@ function AboutPage({ t, lang }) {
         </div>
       </div>
 
-      {/* Experience */}
+      {/* Experience Timeline */}
       <div className="pt-6 border-t border-slate-800/80 space-y-4">
         <div className="flex items-center gap-3">
           <Briefcase className="w-6 h-6 text-cyan-400" />
           <h2 className="text-xl font-bold text-slate-100">{p.experience}</h2>
         </div>
 
-        <div className="p-6 rounded-xl bg-slate-900/60 border border-slate-800/80 space-y-3">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
-            <div className="flex items-center gap-2.5">
-              <Building2 className="w-5 h-5 text-cyan-400 shrink-0" />
-              <h3 className="font-bold text-slate-100 text-base">{p.company}</h3>
+        <div className="relative space-y-4 ps-6 border-s-2 border-slate-800">
+          {(p.workHistory || []).map((job, jIdx) => (
+            <div key={jIdx} className="relative">
+              <span className={`absolute -start-[1.72rem] top-5 w-3 h-3 rounded-full border-2 ${
+                job.current ? 'bg-cyan-400 border-cyan-300 shadow-[0_0_8px_rgba(34,211,238,0.8)]' : 'bg-slate-700 border-slate-600'
+              }`} />
+              <div className="p-6 rounded-xl bg-slate-900/60 border border-slate-800/80 space-y-3">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                  <div className="flex items-center gap-2.5">
+                    <Building2 className="w-5 h-5 text-cyan-400 shrink-0" />
+                    <h3 className="font-bold text-slate-100 text-base">{job.company}</h3>
+                  </div>
+                  <span className={`text-xs font-mono px-2.5 py-1 rounded-md w-fit border ${
+                    job.current
+                      ? 'text-cyan-400 bg-cyan-950/80 border-cyan-800/50'
+                      : 'text-slate-400 bg-slate-800/60 border-slate-700/60'
+                  }`}>
+                    {job.period}
+                  </span>
+                </div>
+                <p className="text-xs font-mono text-slate-300">{job.role}</p>
+                <p className="text-xs text-slate-400 leading-relaxed">
+                  {job.description}
+                </p>
+              </div>
             </div>
-            <span className="text-xs font-mono text-cyan-400 bg-cyan-950/80 border border-cyan-800/50 px-2.5 py-1 rounded-md w-fit">
-              {p.companyPeriod}
-            </span>
-          </div>
-          <p className="text-xs font-mono text-slate-300">{p.role}</p>
-          <p className="text-xs text-slate-400 leading-relaxed">
-            {p.expDesc}
-          </p>
+          ))}
         </div>
       </div>
     </motion.section>
@@ -473,10 +487,15 @@ function ContactPage({ t }) {
 function App() {
   const location = useLocation();
   const [lang, setLang] = useState('en');
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleLanguage = () => {
     setLang((prev) => (prev === 'en' ? 'ar' : 'en'));
   };
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [location.pathname]);
 
   const t = content[lang];
 
@@ -503,7 +522,7 @@ function App() {
           </Link>
 
           <div className="flex items-center gap-2 overflow-hidden">
-            <nav className="flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-medium overflow-x-auto no-scrollbar py-2">
+            <nav className="hidden md:flex items-center gap-1 sm:gap-2 text-xs sm:text-sm font-medium overflow-x-auto no-scrollbar py-2">
               {navLinks.map((link) => {
                 const isActive = location.pathname === link.path;
                 return (
@@ -536,8 +555,50 @@ function App() {
               <Languages className="w-4 h-4" />
               <span>{lang === 'en' ? 'عربي' : 'EN'}</span>
             </button>
+
+            {/* Mobile Hamburger Toggle */}
+            <button
+              onClick={() => setMenuOpen((prev) => !prev)}
+              className="md:hidden p-2 rounded-md bg-slate-900 border border-slate-700/60 text-cyan-400 hover:bg-slate-800 hover:border-cyan-500/50 transition-colors shrink-0"
+              aria-label="Toggle menu"
+              aria-expanded={menuOpen}
+            >
+              {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
           </div>
         </div>
+
+        {/* Mobile Dropdown Menu */}
+        <AnimatePresence>
+          {menuOpen && (
+            <motion.nav
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: 'auto', opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="md:hidden overflow-hidden border-t border-slate-800/80 bg-slate-950/95"
+            >
+              <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex flex-col gap-1">
+                {navLinks.map((link) => {
+                  const isActive = location.pathname === link.path;
+                  return (
+                    <Link
+                      key={link.path}
+                      to={link.path}
+                      className={`px-3 py-2.5 rounded-md text-sm font-medium transition-colors ${
+                        isActive
+                          ? 'text-cyan-400 font-semibold bg-cyan-950/60 border border-cyan-800/50'
+                          : 'text-slate-400 hover:text-cyan-300 hover:bg-slate-900'
+                      }`}
+                    >
+                      {link.name}
+                    </Link>
+                  );
+                })}
+              </div>
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </header>
 
       <main className="max-w-5xl w-full mx-auto px-4 sm:px-6 py-8 sm:py-12 relative z-10 my-auto">
