@@ -42,8 +42,9 @@ export const content = {
       expDesc: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies at Pure Vision Co. under complex operational conditions.",
       workHistory: [
         {
-  company: "Seeking New Opportunities: Available immediately for new roles in Customer Service, Hospitality, and Administrative Support, eager to deliver an exceptional experience and leverage my communication and organizational skills.",
-  period: "Present",
+          role: "Available immediately for new roles in Customer Service, Hospitality, and Administrative Support, eager to deliver an exceptional experience and leverage my communication and organizational skills.",
+  company: "Seeking New Opportunities: ",
+  period: " Present ",
   current: true,
 },
         {
@@ -259,14 +260,15 @@ export const content = {
       expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة.",
       workHistory: [
         {
-        company: "البحث عن فرص جديدة: متاح فوراً للانضمام إلى فريق عمل جديد في مجالات خدمة العملاء والضيافة والأدوار الإدارية، متطلعاً لتقديم تجربة تميز واستثمار مهاراتي في التواصل والتنظيم",
-          period: "الأن...",
+          role: "متاح فوراً للانضمام إلى فريق عمل جديد في مجالات خدمة العملاء والضيافة والأدوار الإدارية، متطلعاً لتقديم تجربة تميز واستثمار مهاراتي في التواصل والتنظيم",
+        company: "البحث عن فرص جديدة : ",
+          period: " الأن ... ",
            current: true,
           },
         {
           role: "مساعد إداري ولوجستي ومندوب توصيل",
           company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
-          period: "ديسمبر 2025 - 1 سبتمبر 2026",
+          period: "ديسمبر 2025 -  سبتمبر 2026",
           current: false,
           description: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في ظل ظروف تشغيلية معقدة."
         },
