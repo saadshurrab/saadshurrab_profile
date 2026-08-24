@@ -8,6 +8,7 @@ import {
   Terminal, 
   Mail, 
   Phone, 
+  MessageCircle,
   MapPin, 
   CheckCircle2, 
   Github, 
@@ -467,6 +468,7 @@ function ContactPage({ t, lang }) {
   const p = t.personalData;
   const ct = t.contactData;
   const rawPhone = p.phone ? p.phone.replace(/[^0-9+]/g, '') : '';
+  const cleanWhatsappPhone = p.phone ? p.phone.replace(/[^0-9]/g, '') : '';
   const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(p.email || '')}`;
 
   return (
@@ -478,13 +480,24 @@ function ContactPage({ t, lang }) {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 font-mono text-sm">
-          {/* Phone / WhatsApp */}
+          {/* Direct Phone Call */}
           {p.phone && (
             <a href={`tel:${rawPhone}`} className="p-5 rounded-lg bg-slate-900/60 border border-cyan-500/30 hover:border-cyan-400 transition-colors flex items-center gap-3 group">
               <Phone className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform shrink-0" />
               <div className="flex flex-col">
-                <span className="text-xs text-slate-400 font-sans">{lang === 'ar' ? 'الاتصال المباشر / واتساب' : 'Direct Call / WhatsApp'}</span>
+                <span className="text-xs text-slate-400 font-sans">{lang === 'ar' ? 'الاتصال المباشر' : 'Direct Call'}</span>
                 <span className="text-slate-200 group-hover:text-cyan-400 font-bold text-sm" dir="ltr">{p.phone}</span>
+              </div>
+            </a>
+          )}
+
+          {/* WhatsApp Direct Chat */}
+          {p.phone && (
+            <a href={`https://wa.me/${cleanWhatsappPhone}`} target="_blank" rel="noopener noreferrer" className="p-5 rounded-lg bg-slate-900/60 border border-emerald-500/30 hover:border-emerald-400 transition-colors flex items-center gap-3 group">
+              <MessageCircle className="w-5 h-5 text-emerald-400 group-hover:scale-110 transition-transform shrink-0" />
+              <div className="flex flex-col">
+                <span className="text-xs text-slate-400 font-sans">{lang === 'ar' ? 'محادثة الواتساب' : 'WhatsApp'}</span>
+                <span className="text-slate-200 group-hover:text-emerald-400 font-bold text-sm" dir="ltr">{p.phone}</span>
               </div>
             </a>
           )}
