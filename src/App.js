@@ -128,6 +128,20 @@ function AboutPage({ t, lang }) {
           <p className="text-xs font-mono text-slate-300">{p.university} — CGPA: <span className="text-cyan-400 font-bold">{p.cgpa}</span></p>
           <p className="text-xs text-slate-400">{p.creditsCompleted}</p>
         </div>
+
+        {p.preUniversityEducation && (
+          <div className="p-5 rounded-xl bg-slate-900/40 border border-slate-800/60 space-y-2">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
+              <h3 className="font-bold text-slate-200 text-sm">{p.preUniversityEducation.title}</h3>
+              <span className="text-xs font-mono text-slate-400 bg-slate-800/60 border border-slate-700/60 px-2.5 py-1 rounded-md w-fit">
+                {p.preUniversityEducation.year}
+              </span>
+            </div>
+            <p className="text-xs font-mono text-slate-400">
+              {p.preUniversityEducation.stream} — {p.preUniversityEducation.percentage}
+            </p>
+          </div>
+        )}
       </div>
 
       {/* Experience Timeline */}
@@ -309,6 +323,8 @@ function CertificatesPage({ t }) {
 }
 
 // --- Projects Page ---
+const projectIcons = [Terminal, Building2, Database];
+
 function ProjectsPage({ t }) {
   const pr = t.projectsData;
   return (
@@ -330,7 +346,13 @@ function ProjectsPage({ t }) {
             className="p-6 rounded-xl bg-slate-900/50 border border-slate-800/80 space-y-4"
           >
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1">
-              <h3 className="text-lg font-bold text-slate-100">{project.title}</h3>
+              <h3 className="text-lg font-bold text-slate-100 flex items-center gap-2.5">
+                {(() => {
+                  const ProjectIcon = projectIcons[idx % projectIcons.length];
+                  return <ProjectIcon className="w-5 h-5 text-cyan-400 shrink-0" />;
+                })()}
+                {project.title}
+              </h3>
               <span className="text-xs font-mono text-cyan-400">{project.subtitle}</span>
             </div>
 
@@ -502,20 +524,88 @@ function ContactPage({ t }) {
   );
 }
 
+// --- 404 Not Found Page ---
+function NotFoundPage({ t }) {
+  const nf = t.notFoundData;
+  return (
+    <motion.section
+      variants={pageVariants}
+      initial="initial"
+      animate="animate"
+      exit="exit"
+      className="flex flex-col items-center justify-center text-center gap-6 py-16"
+    >
+      <div className="p-5 rounded-full bg-cyan-950/60 border border-cyan-800/50">
+        <Terminal className="w-10 h-10 text-cyan-400" />
+      </div>
+      <div className="space-y-2">
+        <h1 className="text-6xl font-extrabold tracking-tight text-cyan-400 drop-shadow-[0_0_20px_rgba(34,211,238,0.5)]">
+          {nf.code}
+        </h1>
+        <h2 className="text-xl font-bold text-slate-100">{nf.title}</h2>
+        <p className="text-sm text-slate-400 max-w-md">{nf.subtitle}</p>
+      </div>
+      <Link
+        to="/"
+        className="px-5 py-2.5 rounded-lg bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-semibold transition-colors shadow-lg shadow-cyan-500/20 text-sm inline-flex items-center gap-2"
+      >
+        {nf.backHome}
+      </Link>
+    </motion.section>
+  );
+}
+
 function App() {
   const location = useLocation();
-  const [lang, setLang] = useState('en');
+  // استرجاع اللغة المحفوظة من المتصفح، أو الإنجليزية كافتراضي
+  const [lang, setLang] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const saved = window.localStorage.getItem('preferredLang');
+      if (saved === 'en' || saved === 'ar') return saved;
+    }
+    return 'en';
+  });
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleLanguage = () => {
     setLang((prev) => (prev === 'en' ? 'ar' : 'en'));
   };
 
+  // حفظ اختيار اللغة كل ما تتغير
+  useEffect(() => {
+    window.localStorage.setItem('preferredLang', lang);
+  }, [lang]);
+
   useEffect(() => {
     setMenuOpen(false);
   }, [location.pathname]);
 
   const t = content[lang];
+
+  // تحديث عنوان الصفحة ووصف الـ meta tag حسب الصفحة الحالية
+  useEffect(() => {
+    const metaByPath = {
+      '/': t.meta.about,
+      '/story': t.meta.story,
+      '/certificates': t.meta.certificates,
+      '/projects': t.meta.projects,
+      '/skills': t.meta.skills,
+      '/contact': t.meta.contact
+    };
+    const pageMeta = metaByPath[location.pathname];
+    if (pageMeta) {
+      document.title = pageMeta.title;
+      let metaDesc = document.querySelector('meta[name="description"]');
+      if (!metaDesc) {
+        metaDesc = document.createElement('meta');
+        metaDesc.setAttribute('name', 'description');
+        document.head.appendChild(metaDesc);
+      }
+      metaDesc.setAttribute('content', pageMeta.description);
+    } else {
+      document.title = `404 — ${t.meta.titleSuffix}`;
+    }
+  }, [location.pathname, t]);
 
   const navLinks = [
     { name: t.nav.about, path: '/' },
@@ -629,12 +719,13 @@ function App() {
             <Route path="/projects" element={<ProjectsPage t={t} />} />
             <Route path="/skills" element={<SkillsPage t={t} />} />
             <Route path="/contact" element={<ContactPage t={t} />} />
+            <Route path="*" element={<NotFoundPage t={t} />} />
           </Routes>
         </AnimatePresence>
       </main>
 
       <footer className="border-t border-slate-800/60 py-6 text-center text-xs font-mono text-slate-500 relative z-10">
-        © {new Date().getFullYear()} {t.personalData.name}. جميع الحقوق محفوظة.
+        © {new Date().getFullYear()} {t.personalData.name}. Built with React & Framer Motion.
       </footer>
     </div>
   );

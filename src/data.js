@@ -23,6 +23,12 @@ export const content = {
       degree: "B.Sc. Computer Science (In Progress)",
       cgpa: "86.40%",
       creditsCompleted: "66 Credit Hours Completed",
+      preUniversityEducation: {
+        title: "General Secondary Certificate (Tawjihi)",
+        stream: "Scientific Stream",
+        year: "2022",
+        percentage: "78.3%"
+      },
       github: "https://github.com/saadshurrab",
       linkedin: "https://ps.linkedin.com/in/saad-ahmed-shurrab-99099841b",
       facebook: "https://www.facebook.com/saad.ahmed.shurrab",
@@ -76,7 +82,7 @@ export const content = {
         },
         {
           heading: "Engineering Insight From Field Operations",
-          text: "Tracking order deliveries and inventory manually on paper revealed how inefficient non-digital systems truly are. Experiencing these real-world operational bottlenecks firsthand inspired me to model normalized database schemas, query optimization layers, and automated tracking workflows to solve manual inventory issues."
+          text: "Tracking order deliveries and inventory manually on paper at Pure Vision revealed how inefficient non-digital systems truly are. Experiencing these operational bottlenecks firsthand, I designed and built an internal management platform for the company — handling inventory tracking, order processing, and client records — replacing the paper-based workflow with a structured database system."
         },
         {
           heading: "Building Practical Solutions",
@@ -124,20 +130,19 @@ export const content = {
           ],
           tags: ["Python", "Telegram API", "SQL", "Automation", "Scheduling Logic"],
           links: [
-            { label: "Open in Telegram", url: "https://t.me/alaqsamoodle_bot", type: "telegram" },
-            { label: "View Code", url: "https://github.com/saadshurrab", type: "github" }
+            { label: "Open in Telegram", url: "https://t.me/alaqsamoodle_bot", type: "telegram" }
           ]
         },
         {
-          title: "Pure Vision Optical Supplies — Company Website",
-          subtitle: "Live Company Website (2025)",
-          description: "A fully responsive company website built for Pure Vision Optical Supplies Co. to showcase optical equipment, services, and contact information with a modern professional design.",
+          title: "Pure Vision Optical Supplies — Internal Management System",
+          subtitle: "Internal Business Platform (2025)",
+          description: "An internal management platform built for Pure Vision Optical Supplies Co. to handle inventory tracking, order processing, and client records for daily company operations — not a public-facing website.",
           highlights: [
-            "Designed and developed a complete company landing page with service showcase",
-            "Implemented responsive design for mobile and desktop viewing",
-            "Integrated contact forms and company branding elements"
+            "Built inventory tracking to replace manual, paper-based stock records",
+            "Implemented order management workflows from intake to fulfillment",
+            "Structured a client records system for the company's daily operations"
           ],
-          tags: ["React", "Tailwind CSS", "Responsive Design", "Frontend"],
+          tags: ["React", "Node.js", "Database", "Inventory Management", "Internal Tools"],
           links: [
             { label: "Visit Website", url: "https://pure-vision.onrender.com/", type: "external" }
           ]
@@ -189,6 +194,21 @@ export const content = {
       facebook: "Facebook Profile",
       instagram: "Instagram Profile",
       twitter: "X (Twitter) Profile"
+    },
+    notFoundData: {
+      code: "404",
+      title: "Page Not Found",
+      subtitle: "The page you're looking for doesn't exist or may have been moved.",
+      backHome: "Back to Home"
+    },
+    meta: {
+      titleSuffix: "Saad Shurrab",
+      about: { title: "Saad Shurrab — About", description: "Computer Science student and technical operations assistant. Systems architecture, databases, and automation." },
+      story: { title: "Saad Shurrab — Story", description: "The resilience and systems journey behind Saad Shurrab's technical work." },
+      certificates: { title: "Saad Shurrab — Certificates", description: "Verified professional training and technical credentials." },
+      projects: { title: "Saad Shurrab — Projects", description: "Systems and software built from field observations and academic needs." },
+      skills: { title: "Saad Shurrab — Skills", description: "Programming, database systems, and technical operations expertise." },
+      contact: { title: "Saad Shurrab — Contact", description: "Get in touch for academic opportunities and software engineering collaborations." }
     }
   },
   ar: {
@@ -215,6 +235,12 @@ export const content = {
       degree: "بكالوريوس علوم الحاسوب (مستمر)",
       cgpa: "86.40%",
       creditsCompleted: "تم إنجاز 66 ساعة معتمدة",
+      preUniversityEducation: {
+        title: "الثانوية العامة (التوجيهي)",
+        stream: "الفرع العلمي",
+        year: "2022",
+        percentage: "78.3%"
+      },
       github: "https://github.com/saadshurrab",
       linkedin: "https://ps.linkedin.com/in/saad-ahmed-shurrab-99099841b",
       facebook: "https://www.facebook.com/saad.ahmed.shurrab",
@@ -268,7 +294,7 @@ export const content = {
         },
         {
           heading: "رؤية هندسية من واقع العمل الميداني",
-          text: "كشف لي تتبع طلبيات التوصيل والمخزون يدوياً على الورق عن مدى ضعف الأنظمة غير الرقمية. تجربة هذه الاختناقات الميدانية ألهمتني لتصميم مخططات قواعد بيانات محسّنة وبناء سير عمل مؤتمت لحل مشاكل إدارة المخزون."
+          text: "كشف لي تتبع طلبيات التوصيل والمخزون يدوياً على الورق في شركة الرؤية النقية عن مدى ضعف الأنظمة غير الرقمية. من خلال معايشة هذه الاختناقات الميدانية عن قرب، صممت وبنيت منصة إدارة داخلية للشركة — تتولى تتبع المخزون ومعالجة الطلبيات وسجلات العملاء — لتحل محل العمل الورقي اليدوي بنظام قاعدة بيانات منظم."
         },
         {
           heading: "بناء حلول برمجية عملية",
@@ -316,20 +342,19 @@ export const content = {
           ],
           tags: ["Python", "Telegram API", "SQL", "Automation", "Scheduling Logic"],
           links: [
-            { label: "فتح في تليجرام", url: "https://t.me/alaqsamoodle_bot", type: "telegram" },
-            { label: "عرض الكود", url: "https://github.com/saadshurrab", type: "github" }
+            { label: "فتح في تليجرام", url: "https://t.me/alaqsamoodle_bot", type: "telegram" }
           ]
         },
         {
-          title: "موقع شركة الرؤية النقية لمستلزمات البصريات",
-          subtitle: "موقع الشركة الرسمي (2025)",
-          description: "موقع شركة كامل ومتجاوب لشركة الرؤية النقية لمستلزمات البصريات لعرض المعدات البصرية والخدمات ومعلومات التواصل بتصميم احترافي عصري.",
+          title: "نظام إدارة داخلي — شركة الرؤية النقية لمستلزمات البصريات",
+          subtitle: "منصة إدارة داخلية للشركة (2025)",
+          description: "منصة إدارة داخلية لشركة الرؤية النقية لمستلزمات البصريات، لإدارة المخزون ومعالجة الطلبيات وسجلات العملاء ضمن العمليات اليومية للشركة — وليست موقعًا موجهًا للعملاء.",
           highlights: [
-            "تصميم وتطوير صفحة هبوط كاملة للشركة مع عرض الخدمات",
-            "تنفيذ تصميم متجاوب يعمل على الجوال وسطح المكتب",
-            "دمج نماذج التواصل وعناصر هوية الشركة"
+            "بناء نظام تتبع مخزون بديل عن السجلات الورقية اليدوية",
+            "تنفيذ سير عمل لإدارة الطلبيات من الاستلام حتى التسليم",
+            "تنظيم سجلات عملاء لخدمة العمليات اليومية للشركة"
           ],
-          tags: ["React", "Tailwind CSS", "تصميم متجاوب", "واجهة أمامية"],
+          tags: ["React", "Node.js", "قاعدة بيانات", "إدارة المخزون", "أدوات داخلية"],
           links: [
             { label: "زيارة الموقع", url: "https://pure-vision.onrender.com/", type: "external" }
           ]
@@ -381,6 +406,21 @@ export const content = {
       facebook: "فيسبوك",
       instagram: "انستغرام",
       twitter: "منصة X (تويتر)"
+    },
+    notFoundData: {
+      code: "404",
+      title: "الصفحة غير موجودة",
+      subtitle: "الصفحة التي تبحث عنها غير موجودة أو ربما تم نقلها.",
+      backHome: "العودة للصفحة الرئيسية"
+    },
+    meta: {
+      titleSuffix: "سعد شراب",
+      about: { title: "سعد شراب — نبذة عني", description: "طالب علوم حاسوب ومساعد عمليات تقنية. هندسة الأنظمة، قواعد البيانات، والأتمتة." },
+      story: { title: "سعد شراب — قصتي", description: "رحلة الصمود وبناء الأنظمة وراء العمل التقني لسعد شراب." },
+      certificates: { title: "سعد شراب — الشهادات", description: "شهادات تدريبية معتمدة ومؤهلات تقنية." },
+      projects: { title: "سعد شراب — المشاريع", description: "أنظمة وبرمجيات تم تطويرها بناءً على الملاحظات الميدانية والاحتياجات الأكاديمية." },
+      skills: { title: "سعد شراب — المهارات", description: "البرمجة، أنظمة قواعد البيانات، والخبرة التقنية." },
+      contact: { title: "سعد شراب — التواصل", description: "تواصل معي للفرص الأكاديمية والتعاون في هندسة البرمجيات." }
     }
   }
 };
