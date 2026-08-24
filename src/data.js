@@ -42,10 +42,15 @@ export const content = {
       expDesc: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies at Pure Vision Co. under complex operational conditions.",
       workHistory: [
         {
+  company: "Seeking New Opportunities: Available immediately for new roles in Customer Service, Hospitality, and Administrative Support, eager to deliver an exceptional experience and leverage my communication and organizational skills.",
+  period: "Present",
+  current: true,
+},
+        {
           role: "Office Assistant & Delivery Representative",
           company: "Pure Vision Optical Supplies Co.",
           period: "December 2025 – Present",
-          current: true,
+          current: false,
           description: "Coordinated field delivery logistics, order record management, and administrative archiving for optical equipment and supplies under complex operational conditions."
         },
         {
@@ -65,7 +70,7 @@ export const content = {
         {
           role: "Fire Suppression Equipment Technician",
           company: "Al-Ghusein Co. for Monitoring & Fire Extinguishing Systems",
-          period: "1.5 years (during displacement)",
+          period: "1 year (during displacement)",
           current: false,
           description: "First professional role, carried out during displacement. Prepared and serviced fire extinguishing equipment, gaining hands-on technical experience with safety systems under demanding circumstances."
         }
@@ -254,10 +259,15 @@ export const content = {
       expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة.",
       workHistory: [
         {
+        company: "البحث عن فرص جديدة: متاح فوراً للانضمام إلى فريق عمل جديد في مجالات خدمة العملاء والضيافة والأدوار الإدارية، متطلعاً لتقديم تجربة تميز واستثمار مهاراتي في التواصل والتنظيم",
+          period: "الأن...",
+           current: true,
+          },
+        {
           role: "مساعد إداري ولوجستي ومندوب توصيل",
           company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
-          period: "ديسمبر 2025 – الحالي",
-          current: true,
+          period: "ديسمبر 2025 - 1 سبتمبر 2026",
+          current: false,
           description: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في ظل ظروف تشغيلية معقدة."
         },
         {
@@ -277,7 +287,7 @@ export const content = {
         {
           role: "فني تجهيز معدات إطفاء",
           company: "شركة الغصين لأنظمة المراقبة والإطفاء",
-          period: "سنة ونصف (خلال فترة النزوح)",
+          period: "سنة واحدة (خلال فترة النزوح)",
           current: false,
           description: "أول عمل مهني، تم خلال فترة النزوح. تجهيز وصيانة أجهزة الإطفاء، واكتساب خبرة عملية بمعدات السلامة في ظل ظروف صعبة."
         }
