@@ -83,16 +83,16 @@ export const content = {
       subtitle: "How field challenges shaped a developer's perspective on practical problem-solving.",
       paragraphs: [
         {
-          heading: "Adaptability in the Face of Disruption",
-          text: "When severe circumstances disrupted my path and cost me my primary work device, my academic and coding journey hit a sudden halt. Instead of stepping back, I chose field work as a logistics representative at Pure Vision. Long hours on the road managing physical deliveries under strict constraints were not just a way to secure new tools, but a masterclass in patience and determination."
+          heading: "Facing Challenges and Rebuilding",
+          text: "When difficult circumstances led to the loss of my laptop, my academic and programming journey came to a sudden halt. Refusing to give up, I took to the field as an administrative assistant and delivery representative at Pure Vision Optics Company. Long working hours and daily field effort to secure a new device became a true test of patience and determination to succeed."
         },
         {
-          heading: "Discovering Solutions in Real-World Bottlenecks",
-          text: "Navigating paper records and manual inventory on a daily basis highlighted the clear costs of inefficient operations. Experiencing these real-world bottlenecks firsthand transformed my technical perspective: code is not just syntax, but a tool to fix friction. This realization led me to build an internal management database system for the company to replace manual workflows entirely."
+          heading: "Turning Struggles into Technical Vision",
+          text: "While manually tracking orders and operations on paper, I experienced firsthand the inefficiency and delays of traditional systems. This expanded my perspective on programming—it was no longer just about writing code, but a real-world tool to resolve operational bottlenecks. Driven by this realization, I designed an internal management system for the company to eliminate paper logs and fully automate workflow processes."
         },
         {
-          heading: "Building for Community & Academic Need",
-          text: "Observing fellow students struggling to track course deadlines and scattered exam schedules, I built a custom automated Telegram bot using Python and SQL from scratch. The takeaway of my journey remains simple: tools do not build solutions—resilience and a deep understanding of human operational needs do."
+          heading: "Code is a Tool; Persistence is the Engine",
+          text: "This field-driven perspective extended into my academic life. Noticing my classmates struggling to keep track of schedules and coursework, I developed a fully automated Telegram bot to assist them and organize their daily routines. The lesson from my journey is that tools and technologies are always available, but the true difference lies in persistence and a deep understanding of people’s real-world needs."
         }
       ]
     },
@@ -301,15 +301,15 @@ export const content = {
       subtitle: "كيف صقلت الظروف والتحديات رؤيتي في حل المشكلات التقنية.",
       paragraphs: [
         {
-          heading: "المواجهة وإعادة بناء الأدوات",
+          heading: "المواجهة وإعادة البناء",
           text: "عندما أدت الظروف الصعبة إلى فقدان جهازي المحمول، توقفت مسيرتي الأكاديمية والبرمجية بشكل مفاجئ. لم أستسلم للواقع، فنَزَلت إلى الميدان للعمل كمساعد إداري ومندوب توصيل في شركة الرؤية النقية كانت ساعات العمل الطويلة والجهد الميداني اليومي لتأمين جهاز جديد بمثابة اختبار حقيقي للصبر الشديد والرغبة الصادقة في النجاح"
         },
         {
-          heading: "الرؤية البرمجية من قلب المعاناة الميدانية",
+          heading: "تحويل المعاناة إلى رؤية تقنية",
           text: "أثناء متابعتي للطلبيات والعمليات يدوياً على الورق، لمست بنفسي حجم البطء وضياع الوقت في الأنظمة التقليدية. هنا اتسعت رؤيتي للبرمجة؛ فلم تعد مجرد كتابة شفرات، بل أداة حقيقية لفك الاختناقات الميدانية. قادني هذا الإدراك لتصميم نظام إدارة داخلي للشركة يلغي السجلات الورقية ويُؤتمت العمليات بالكامل"
         }
         {
-          heading: "العبرة: البرمجة أداة والإصرار هو المحرك",
+          heading: "البرمجة أداة.. والإصرار هو المحرك",
           text: "امتدت هذه الرؤية الميدانية إلى حياتي الأكاديمية؛ فعندما لاحظت تشتت زملائي في متابعة المواعيد والمهام الدراسية، قمت بتطوير بوت تليجرام مؤتمت بالكامل لخدمتهم وتنظيم جدولهم. العبرة من رحلتي هي أن الأدوات والتقنيات متوفرة دائماً، لكن الفارق الحقيقي يكمن في الإصرار، والفهم العميق لاحتياجات الناس الواقعية."
         }
       ]
