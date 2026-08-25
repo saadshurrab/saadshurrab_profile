@@ -652,16 +652,18 @@ function App() {
       <div className="fixed inset-0 bg-[linear-gradient(to_right,#1e293b15_1px,transparent_1px),linear-gradient(to_bottom,#1e293b15_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
 
       <header className="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-2">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between gap-3">
           
-          {/* Logo & Brand Name */}
-          <Link to="/" className="flex items-center gap-2.5 font-mono group py-1 shrink-0">
-            <img 
-              src="/logo.png" 
-              alt="Logo" 
-              className="w-7 h-7 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]" 
-            />
-            <span className="text-base sm:text-lg font-bold tracking-wider text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.7)] group-hover:drop-shadow-[0_0_20px_rgba(34,211,238,1)] transition-all duration-300">
+          {/* Prominent Corner Logo & Brand Name */}
+          <Link to="/" className="flex items-center gap-3 font-mono group py-1 shrink-0">
+            <div className="relative flex items-center justify-center p-1.5 rounded-xl bg-slate-900/80 border border-cyan-500/30 group-hover:border-cyan-400 transition-all duration-300 shadow-md shadow-cyan-500/10">
+              <img 
+                src="/logo.png" 
+                alt="Logo" 
+                className="w-9 h-9 sm:w-11 sm:h-11 object-contain group-hover:scale-105 transition-transform duration-300 drop-shadow-[0_0_10px_rgba(34,211,238,0.8)]" 
+              />
+            </div>
+            <span className="text-lg sm:text-xl font-bold tracking-wider text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.7)] group-hover:drop-shadow-[0_0_20px_rgba(34,211,238,1)] transition-all duration-300">
               Saad Shurrab<span className="text-blue-500 font-extrabold animate-pulse">.dev</span>
             </span>
           </Link>
