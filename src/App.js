@@ -653,8 +653,14 @@ function App() {
 
       <header className="sticky top-0 z-50 backdrop-blur-md bg-slate-950/80 border-b border-slate-800/80">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-2">
-          <Link to="/" className="flex items-center gap-2 font-mono group py-1 shrink-0">
-            <Terminal className="w-5 h-5 text-cyan-400 group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]" />
+          
+          {/* Logo & Brand Name */}
+          <Link to="/" className="flex items-center gap-2.5 font-mono group py-1 shrink-0">
+            <img 
+              src="/logo.png" 
+              alt="Logo" 
+              className="w-7 h-7 object-contain group-hover:scale-110 transition-transform duration-300 drop-shadow-[0_0_8px_rgba(34,211,238,0.8)]" 
+            />
             <span className="text-base sm:text-lg font-bold tracking-wider text-cyan-400 drop-shadow-[0_0_12px_rgba(34,211,238,0.7)] group-hover:drop-shadow-[0_0_20px_rgba(34,211,238,1)] transition-all duration-300">
               Saad Shurrab<span className="text-blue-500 font-extrabold animate-pulse">.dev</span>
             </span>
