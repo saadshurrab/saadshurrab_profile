@@ -39,7 +39,6 @@ export const content = {
       downloadCV: "Download CV",
       education: "Education",
       experience: "Professional Experience",
-      expDesc: "Coordinated field delivery logistics, order management, and administrative support at Pure Vision Co. under complex operational conditions.",
       workHistory: [
         {
           company: "Open to New Opportunities",
@@ -260,7 +259,6 @@ export const content = {
       downloadCV: "تحميل السيرة الذاتية",
       education: "التعليم الأكاديمي",
       experience: "الخبرة المهنية",
-      expDesc: "تنسيق لوجستيات التوصيل الميداني، إدارة سجلات الطلبيات، والأرشفة الإدارية للمعدات والمستلزمات البصرية في شركة الرؤية النقية لمستلزمات مراكز البصريات في ظل ظروف تشغيلية معقدة.",
       workHistory: [
         {
           company: "متاح لفرص عمل جديدة",
