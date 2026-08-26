@@ -118,6 +118,14 @@ export const content = {
           description: "Professional training focusing on foundational business strategies and network marketing fundamentals.",
           badge: "Attendance",
           image: "/bit-course.jpg"
+        },
+        {
+          title: "One Million Prompters – Certificate of Completion",
+          issuer: "Dubai Future Foundation & Dubai Centre for Artificial Intelligence",
+          accreditation: "Dubai Universal Blueprint for Artificial Intelligence",
+          description: "Successfully completed the One Million Prompters initiative launched by His Highness Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, Crown Prince of Dubai, developing prompt engineering skills for AI systems and contributing to building a future-ready workforce.",
+          badge: "Completed",
+          image: "/prompters-certificate.jpg"
         }
       ]
     },
@@ -338,6 +346,14 @@ export const content = {
           description: "تدريب احترافي يركز على أساسيات استراتيجيات الأعمال والتسويق الشبكي.",
           badge: "حضور",
           image: "/bit-course.jpg"
+        },
+        {
+          title: "مليون خبير أوامر — شهادة إتمام",
+          issuer: "مؤسسة دبي للمستقبل ومركز دبي للاستخدامات الذكاء الاصطناعي",
+          accreditation: "منظومة دبي الشاملة للذكاء الاصطناعي",
+          description: "إتمام مبادرة مليون خبير أوامر (1 Million Prompters) التي أطلقها صاحب السمو الشيخ حمدان بن محمد بن راشد آل مكتوم، ولي عهد دبي، لتطوير مهارات هندسة الأوامر (Prompt Engineering) لأنظمة الذكاء الاصطناعي والمساهمة في بناء كوادر جاهزة للمستقبل.",
+          badge: "مكتملة",
+          image: "/prompters-certificate.jpg"
         }
       ]
     },
