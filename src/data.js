@@ -126,6 +126,15 @@ export const content = {
           description: "Successfully completed the One Million Prompters initiative launched by His Highness Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, Crown Prince of Dubai, developing prompt engineering skills for AI systems and contributing to building a future-ready workforce.",
           badge: "Completed",
           image: "/prompters-certificate.jpg"
+        },
+        {
+          title: "Change Management Foundations",
+          issuer: "Simplilearn SkillUp",
+          trainer: "Krishna Kumar (CEO, Simplilearn)",
+          duration: "Completed 27th August 2026",
+          description: "Completed an online course covering the foundations of change management, demonstrating initiative and commitment to deepening professional skills. Certificate code: 10656746.",
+          badge: "Completed",
+          image: "/change-management-certificate.jpg"
         }
       ]
     },
@@ -354,6 +363,15 @@ export const content = {
           description: "إتمام مبادرة مليون خبير أوامر (1 Million Prompters) التي أطلقها صاحب السمو الشيخ حمدان بن محمد بن راشد آل مكتوم، ولي عهد دبي، لتطوير مهارات هندسة الأوامر (Prompt Engineering) لأنظمة الذكاء الاصطناعي والمساهمة في بناء كوادر جاهزة للمستقبل.",
           badge: "مكتملة",
           image: "/prompters-certificate.jpg"
+        },
+        {
+          title: "أساسيات إدارة التغيير (Change Management Foundations)",
+          issuer: "Simplilearn SkillUp",
+          trainer: "كريشنا كومار (الرئيس التنفيذي لـ Simplilearn)",
+          duration: "أُنجزت بتاريخ 27 أغسطس 2026",
+          description: "إتمام دورة تدريبية عبر الإنترنت حول أساسيات إدارة التغيير، بما يعكس المبادرة والالتزام بتعميق المهارات المهنية. رمز الشهادة: 10656746.",
+          badge: "مكتملة",
+          image: "/change-management-certificate.jpg"
         }
       ]
     },
