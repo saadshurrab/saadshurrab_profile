@@ -92,7 +92,7 @@ export const content = {
         },
         {
           heading: "Code is a Tool; Persistence is the Engine",
-          text: "This field-driven perspective extended into my academic life. Noticing my classmates struggling to keep track of schedules and coursework, I developed a fully automated Telegram bot to assist them and organize their daily routines. The lesson from my journey is that tools and technologies are always available, but the true difference lies in persistence and a deep understanding of people’s real-world needs."
+          text: "This field-driven perspective extended into my academic life. Noticing my classmates struggling to keep track of schedules and coursework, I developed a fully automated Telegram bot to assist them and organize their daily routines. The lesson from my journey is that tools and technologies are always available, but the true difference lies in persistence and a deep understanding of people's real-world needs."
         }
       ]
     },
@@ -102,6 +102,15 @@ export const content = {
       clickEnlarge: "Click to enlarge",
       items: [
         {
+          title: "Certificate of Accomplishment – Java (Basic)",
+          issuer: "HackerRank",
+          trainer: "Harishankaran K (CTO, HackerRank)",
+          duration: "Earned on 27 Aug, 2026",
+          description: "Passed the HackerRank skill certification test for Java (Basic), validating foundational Java programming skills. Certificate ID: 45DC2A6469EF.",
+          badge: "Certified",
+          image: "/hackerrank-java-certificate.jpg"
+        },
+        {
           title: "International Computer Driving License (ICDL)",
           issuer: "Learn More Institute for Training and Development",
           accreditation: "Canadian Board (Reg No. 56009111acc) & ISO 21001",
@@ -109,15 +118,6 @@ export const content = {
           description: "Comprehensive practical training covering essential computer application skills, digital communication, and office automation tools.",
           badge: "Certified",
           image: "/icdl.jpg"
-        },
-        {
-          title: "Certificate of Attendance – The Bit Course",
-          issuer: "Torino Academy (TA)",
-          trainer: "Shady Said (International Trainer)",
-          type: "Virtual Training",
-          description: "Professional training focusing on foundational business strategies and network marketing fundamentals.",
-          badge: "Attendance",
-          image: "/bit-course.jpg"
         },
         {
           title: "One Million Prompters – Certificate of Completion",
@@ -135,6 +135,15 @@ export const content = {
           description: "Completed an online course covering the foundations of change management, demonstrating initiative and commitment to deepening professional skills. Certificate code: 10656746.",
           badge: "Completed",
           image: "/change-management-certificate.jpg"
+        },
+        {
+          title: "Certificate of Attendance – The Bit Course",
+          issuer: "Torino Academy (TA)",
+          trainer: "Shady Said (International Trainer)",
+          type: "Virtual Training",
+          description: "Professional training focusing on foundational business strategies and network marketing fundamentals.",
+          badge: "Attendance",
+          image: "/bit-course.jpg"
         }
       ]
     },
@@ -339,6 +348,15 @@ export const content = {
       clickEnlarge: "انقر للتكبير",
       items: [
         {
+          title: "شهادة إنجاز — Java (أساسي)",
+          issuer: "HackerRank",
+          trainer: "هاريشانكاران ك. (المدير التقني لـ HackerRank)",
+          duration: "تاريخ الحصول عليها: 27 أغسطس 2026",
+          description: "اجتياز اختبار HackerRank لتقييم المهارات في لغة Java (المستوى الأساسي)، بما يوثق أساسيات مهارات البرمجة بلغة Java. رمز الشهادة: 45DC2A6469EF.",
+          badge: "معتمدة",
+          image: "/hackerrank-java-certificate.jpg"
+        },
+        {
           title: "الرخصة الدولية لقيادة الحاسوب (ICDL)",
           issuer: "مركز Learn More للتدريب والتطوير",
           accreditation: "البورد الكندي (Reg No. 56009111acc) & ISO 21001",
@@ -346,15 +364,6 @@ export const content = {
           description: "تدريب عملي شامل يغطي مهارات تطبيقات الحاسوب الأساسية، الاتصالات الرقمية، وأدوات أتمتة المكاتب.",
           badge: "شهادة معتمدة",
           image: "/icdl.jpg"
-        },
-        {
-          title: "شهادة حضور – كورس Bit",
-          issuer: "أكاديمية تورينو (TA)",
-          trainer: "شادي سعيد (مدرب دولي)",
-          type: "تدريب افتراضي",
-          description: "تدريب احترافي يركز على أساسيات استراتيجيات الأعمال والتسويق الشبكي.",
-          badge: "حضور",
-          image: "/bit-course.jpg"
         },
         {
           title: "مليون خبير أوامر — شهادة إتمام",
@@ -372,6 +381,15 @@ export const content = {
           description: "إتمام دورة تدريبية عبر الإنترنت حول أساسيات إدارة التغيير، بما يعكس المبادرة والالتزام بتعميق المهارات المهنية. رمز الشهادة: 10656746.",
           badge: "مكتملة",
           image: "/change-management-certificate.jpg"
+        },
+        {
+          title: "شهادة حضور – كورس Bit",
+          issuer: "أكاديمية تورينو (TA)",
+          trainer: "شادي سعيد (مدرب دولي)",
+          type: "تدريب افتراضي",
+          description: "تدريب احترافي يركز على أساسيات استراتيجيات الأعمال والتسويق الشبكي.",
+          badge: "حضور",
+          image: "/bit-course.jpg"
         }
       ]
     },
