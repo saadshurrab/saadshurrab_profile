@@ -52,28 +52,28 @@ export const content = {
           company: "Pure Vision Optical Supplies Co.",
           period: "December 2025 – September 2026",
           current: false,
-          description: "Managed physical order dispatch, stock records, and administrative archiving under challenging operational field environments."
+          description: "Managed physical order dispatch, stock records, and administrative archiving for the company's daily field operations."
         },
         {
           role: "Bakery Worker",
           company: "Abu Diya Bakery",
           period: "1 week",
           current: false,
-          description: "Short-term experience in intense daily operations, providing early perspective on adaptability and hard physical work."
+          description: "A brief, physically demanding role in daily bakery production operations."
         },
         {
           role: "Shipping Point Operator",
           company: "Local Shipping & Logistics Point",
           period: "1 year",
           current: false,
-          description: "Handled package intake, categorization, and distribution logistics prior to joining Pure Vision Co."
+          description: "Handled package intake, sorting, and distribution logistics at a local shipping point."
         },
         {
           role: "Fire Suppression Equipment Technician",
           company: "Al-Ghusein Co. for Monitoring & Fire Extinguishing Systems",
           period: "1 year (during displacement)",
           current: false,
-          description: "Gained foundational hands-on technical skills servicing safety and fire suppression systems under challenging conditions."
+          description: "First professional experience, preparing and servicing fire suppression equipment under demanding conditions during displacement."
         }
       ]
     },
@@ -135,6 +135,15 @@ export const content = {
           description: "Completed an online course covering the foundations of change management, demonstrating initiative and commitment to deepening professional skills. Certificate code: 10656746.",
           badge: "Completed",
           image: "/change-management-certificate.jpg"
+        },
+        {
+          title: "Delegation, Coaching and Mentoring Skills",
+          issuer: "Edraak",
+          trainer: "Dr. Suhail Jouaneh",
+          duration: "3 Training & Interactive Hours (Completed 29/8/2026)",
+          description: "Level Completion Certificate covering effective delegation as a developmental administrative tool, linking delegation to the foundations of guidance and direction required for effective, successful processes at the institutional level.",
+          badge: "Completed",
+          image: "/delegation-coaching-mentoring-certificate.jpg"
         },
         {
           title: "Certificate of Attendance – The Bit Course",
@@ -298,28 +307,28 @@ export const content = {
           company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
           period: "ديسمبر 2025 - سبتمبر 2026",
           current: false,
-          description: "إدارة التوصيل الميداني، تنظيم سجلات الطلبات، والأرشفة الإدارية للشركة في ظل الظروف التشغيلية الصعبة."
+          description: "إدارة التوصيل الميداني، تنظيم سجلات الطلبات، والأرشفة الإدارية للعمليات اليومية للشركة."
         },
         {
           role: "عامل مخبز",
           company: "مخبز أبو دية",
           period: "أسبوع واحد",
           current: false,
-          description: "تجربة عمل ميدانية مكثفة أكسبتني تقدير الانضباط والمرونة في التعامل مع أجواء العمل الشاقة."
+          description: "عمل قصير المدة وشاق بدنيًا ضمن عمليات إنتاج المخبز اليومية."
         },
         {
           role: "عامل في نقطة شحن",
           company: "نقطة شحن ولوجستيات محلية",
           period: "سنة واحدة",
           current: false,
-          description: "تولى استلام وفرز وتنسيق الشحنات بنقطة شحن محلية لمدة سنة قبل الانتقال إلى شركة الرؤية النقية."
+          description: "تولى استلام وفرز وتنسيق الشحنات بنقطة شحن محلية."
         },
         {
           role: "فني تجهيز معدات إطفاء",
           company: "شركة الغصين لأنظمة المراقبة والإطفاء",
           period: "سنة واحدة (خلال فترة النزوح)",
           current: false,
-          description: "الخبرة المهنية الأولى، وتضمنت تجهيز وصيانة أجهزة الإطفاء ومعدات السلامة العامة في ظروف استثنائية."
+          description: "الخبرة المهنية الأولى، وتضمنت تجهيز وصيانة أجهزة الإطفاء في ظروف استثنائية خلال فترة النزوح."
         }
       ]
     },
@@ -381,6 +390,15 @@ export const content = {
           description: "إتمام دورة تدريبية عبر الإنترنت حول أساسيات إدارة التغيير، بما يعكس المبادرة والالتزام بتعميق المهارات المهنية. رمز الشهادة: 10656746.",
           badge: "مكتملة",
           image: "/change-management-certificate.jpg"
+        },
+        {
+          title: "مهارات التفويض والتدريب والتوجيه (Delegation, Coaching and Mentoring Skills)",
+          issuer: "إدراك (Edraak)",
+          trainer: "د. سهيل جوانه",
+          duration: "3 ساعات تدريبية وتفاعلية (أُنجزت بتاريخ 29/8/2026)",
+          description: "شهادة إتمام مستوى تغطي مهارة التفويض الفعّال كأداة إدارية تطويرية، وربط التفويض بأساسيات التوجيه والإرشاد اللازمة لنجاح وفعالية العمليات على المستوى المؤسسي.",
+          badge: "مكتملة",
+          image: "/delegation-coaching-mentoring-certificate.jpg"
         },
         {
           title: "شهادة حضور – كورس Bit",
