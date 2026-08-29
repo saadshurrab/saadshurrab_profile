@@ -62,11 +62,11 @@ export const content = {
           description: "A deliberate short-term placement taken on to build endurance and discipline under real workplace pressure — working early shifts on a fast-paced production line, handling dough preparation and packaging near hot ovens, and adapting quickly to physically demanding, high-intensity daily routines."
         },
         {
-          role: "Mobile Recharge & Top-Up Point Operator",
-          company: "Local Mobile Recharge Point",
+          role: "Device Charging Point Operator",
+          company: "Local Device Charging Point",
           period: "1 year",
           current: false,
-          description: "Operated a local mobile phone recharge point, handling daily prepaid balance top-ups and recharge card sales across multiple network providers. Managed cash transactions and end-of-day reconciliation, kept accurate records of recharge stock, assisted customers with basic SIM and line issues, and provided walk-in customer service throughout the day."
+          description: "Operated a local charging point providing full battery charging (0–100%) for mobile phones and other electronic devices during the war, at a time of prolonged nationwide power outages. Managed multiple devices simultaneously using alternative power sources, organized customer queues and charging schedules to ensure fair turnaround, handled devices safely and responsibly, and managed daily cash transactions for the service."
         },
         {
           role: "Fire Suppression Equipment Technician",
@@ -106,7 +106,7 @@ export const content = {
           issuer: "HackerRank",
           trainer: "Harishankaran K (CTO, HackerRank)",
           duration: "Earned on 27 Aug, 2026",
-          description: "Passed the HackerRank skill certification test for Java (Basic), validating foundational Java programming skills. Certificate ID: 45DC2A6469EF.",
+          description: "Passed HackerRank's standardized Java (Basic) skill assessment, demonstrating solid command of core Java fundamentals — syntax, data types, control flow, and basic object-oriented programming concepts. Certificate ID: 45DC2A6469EF.",
           badge: "Certified",
           image: "/hackerrank-java-certificate.jpg"
         },
@@ -115,7 +115,7 @@ export const content = {
           issuer: "Learn More Institute for Training and Development",
           accreditation: "Canadian Board (Reg No. 56009111acc) & ISO 21001",
           duration: "20 Training Hours (21/12/2025 – 15/01/2026)",
-          description: "Comprehensive practical training covering essential computer application skills, digital communication, and office automation tools.",
+          description: "Internationally recognized computer literacy certification covering core modules: word processing, spreadsheets, presentations, databases, IT security, and everyday digital communication and office automation tools.",
           badge: "Certified",
           image: "/icdl.jpg"
         },
@@ -123,16 +123,24 @@ export const content = {
           title: "One Million Prompters – Certificate of Completion",
           issuer: "Dubai Future Foundation & Dubai Centre for Artificial Intelligence",
           accreditation: "Dubai Universal Blueprint for Artificial Intelligence",
-          description: "Successfully completed the One Million Prompters initiative launched by His Highness Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, Crown Prince of Dubai, developing prompt engineering skills for AI systems and contributing to building a future-ready workforce.",
+          description: "Completed the One Million Prompters initiative launched by His Highness Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, Crown Prince of Dubai — building foundational prompt engineering skills for effectively directing AI systems, as part of a national effort to prepare a future-ready workforce.",
           badge: "Completed",
           image: "/prompters-certificate.jpg"
+        },
+        {
+          title: "AI Design From Scratch 2026 — Claude, ChatGPT & Gemini",
+          issuer: "Forsa Platform (for9a.com)",
+          duration: "Completed 29/08/2026",
+          description: "Comprehensive practical online course on learning design with artificial intelligence from scratch, covering hands-on use of Claude, ChatGPT, and Gemini as AI design tools. Certificate ID: 785891.",
+          badge: "Completed",
+          image: "/forsa-ai-design-certificate.jpg"
         },
         {
           title: "Change Management Foundations",
           issuer: "Simplilearn SkillUp",
           trainer: "Krishna Kumar (CEO, Simplilearn)",
           duration: "Completed 27th August 2026",
-          description: "Completed an online course covering the foundations of change management, demonstrating initiative and commitment to deepening professional skills. Certificate code: 10656746.",
+          description: "Online course covering the core principles of managing organizational change — including planning for change, communicating with stakeholders, and addressing resistance — to support smoother, more effective transitions within a team or organization. Certificate code: 10656746.",
           badge: "Completed",
           image: "/change-management-certificate.jpg"
         },
@@ -141,7 +149,7 @@ export const content = {
           issuer: "Edraak",
           trainer: "Dr. Suhail Jouaneh",
           duration: "3 Training & Interactive Hours (Completed 29/8/2026)",
-          description: "Level Completion Certificate covering effective delegation as a developmental administrative tool, linking delegation to the foundations of guidance and direction required for effective, successful processes at the institutional level.",
+          description: "Level Completion Certificate on effective delegation as a developmental administrative tool — covering how to delegate tasks in a way that builds team capability, and linking delegation to the fundamentals of guidance and direction needed for successful, effective processes at the institutional level.",
           badge: "Completed",
           image: "/delegation-coaching-mentoring-certificate.jpg"
         },
@@ -150,7 +158,7 @@ export const content = {
           issuer: "Torino Academy (TA)",
           trainer: "Shady Said (International Trainer)",
           type: "Virtual Training",
-          description: "Professional training focusing on foundational business strategies and network marketing fundamentals.",
+          description: "Professional virtual training on foundational business strategy concepts and the fundamentals of network marketing, including basic principles of building and structuring a sales network.",
           badge: "Attendance",
           image: "/bit-course.jpg"
         }
@@ -317,11 +325,11 @@ export const content = {
           description: "تجربة عمل قصيرة ومتعمدة لتعزيز التحمل والانضباط وتحمّل ضغط العمل الشاق في بيئة عمل حقيقية — العمل بنوبات مبكرة على خط إنتاج سريع الوتيرة، والمشاركة بتحضير العجين والتعبئة بالقرب من الأفران الساخنة، والتكيّف السريع مع روتين يومي شاق وعالي الكثافة."
         },
         {
-          role: "عامل بنقطة شحن رصيد جوالات",
-          company: "نقطة شحن رصيد جوالات محلية",
+          role: "عامل بنقطة شحن أجهزة",
+          company: "نقطة شحن أجهزة محلية",
           period: "سنة واحدة",
           current: false,
-          description: "إدارة نقطة شحن رصيد جوالات محلية، بما يشمل عمليات شحن الرصيد اليومية وبيع كروت الشحن لعدة شركات اتصالات مختلفة. إدارة المعاملات النقدية وتسوية الحسابات نهاية كل يوم، والحفاظ على سجلات دقيقة لمخزون كروت الشحن، ومساعدة الزبائن بمشاكل الخطوط والشرائح الأساسية، وتقديم خدمة مباشرة للزبائن الحاضرين طوال اليوم."
+          description: "إدارة نقطة شحن محلية لتقديم خدمة شحن كامل (من 0 إلى 100%) للهواتف النقالة والأجهزة الإلكترونية خلال فترة الحرب، في ظل انقطاع الكهرباء الممتد على مستوى القطاع. إدارة شحن عدة أجهزة بنفس الوقت باستخدام مصادر طاقة بديلة، وتنظيم أدوار وجدول شحن الزبائن لضمان عدالة الدور، والتعامل مع الأجهزة بأمان ومسؤولية، وإدارة المعاملات النقدية اليومية لهذه الخدمة."
         },
         {
           role: "فني تجهيز معدات إطفاء",
@@ -361,7 +369,7 @@ export const content = {
           issuer: "HackerRank",
           trainer: "هاريشانكاران ك. (المدير التقني لـ HackerRank)",
           duration: "تاريخ الحصول عليها: 27 أغسطس 2026",
-          description: "اجتياز اختبار HackerRank لتقييم المهارات في لغة Java (المستوى الأساسي)، بما يوثق أساسيات مهارات البرمجة بلغة Java. رمز الشهادة: 45DC2A6469EF.",
+          description: "اجتياز اختبار HackerRank المعياري لتقييم المهارات في لغة Java (المستوى الأساسي)، بما يوثق إتقان أساسيات اللغة: الصياغة البرمجية، أنواع البيانات، هياكل التحكم، ومبادئ البرمجة الكائنية الأساسية. رمز الشهادة: 45DC2A6469EF.",
           badge: "معتمدة",
           image: "/hackerrank-java-certificate.jpg"
         },
@@ -370,7 +378,7 @@ export const content = {
           issuer: "مركز Learn More للتدريب والتطوير",
           accreditation: "البورد الكندي (Reg No. 56009111acc) & ISO 21001",
           duration: "20 ساعة تدريبية (21/12/2025 – 15/01/2026)",
-          description: "تدريب عملي شامل يغطي مهارات تطبيقات الحاسوب الأساسية، الاتصالات الرقمية، وأدوات أتمتة المكاتب.",
+          description: "شهادة دولية معتمدة بمحو الأمية الحاسوبية، تغطي الوحدات الأساسية: معالجة النصوص، جداول البيانات، العروض التقديمية، قواعد البيانات، أمن المعلومات، وأساسيات التواصل الرقمي وأدوات أتمتة المكاتب.",
           badge: "شهادة معتمدة",
           image: "/icdl.jpg"
         },
@@ -378,16 +386,24 @@ export const content = {
           title: "مليون خبير أوامر — شهادة إتمام",
           issuer: "مؤسسة دبي للمستقبل ومركز دبي للاستخدامات الذكاء الاصطناعي",
           accreditation: "منظومة دبي الشاملة للذكاء الاصطناعي",
-          description: "إتمام مبادرة مليون خبير أوامر (1 Million Prompters) التي أطلقها صاحب السمو الشيخ حمدان بن محمد بن راشد آل مكتوم، ولي عهد دبي، لتطوير مهارات هندسة الأوامر (Prompt Engineering) لأنظمة الذكاء الاصطناعي والمساهمة في بناء كوادر جاهزة للمستقبل.",
+          description: "إتمام مبادرة مليون خبير أوامر (1 Million Prompters) التي أطلقها صاحب السمو الشيخ حمدان بن محمد بن راشد آل مكتوم، ولي عهد دبي — بناء مهارات أساسية بهندسة الأوامر (Prompt Engineering) لتوجيه أنظمة الذكاء الاصطناعي بفعالية، ضمن جهد وطني لإعداد كوادر جاهزة لمستقبل سوق العمل.",
           badge: "مكتملة",
           image: "/prompters-certificate.jpg"
+        },
+        {
+          title: "تعلم التصميم بالذكاء الاصطناعي من الصفر 2026 — Claude وChatGPT وGemini",
+          issuer: "منصة فرصة (for9a.com)",
+          duration: "أُنجزت بتاريخ 29/08/2026",
+          description: "كورس عملي شامل عبر الإنترنت لتعلم التصميم بالذكاء الاصطناعي من الصفر، يغطي الاستخدام العملي لأدوات Claude وChatGPT وGemini كأدوات تصميم بالذكاء الاصطناعي. رمز الشهادة: 785891.",
+          badge: "مكتملة",
+          image: "/forsa-ai-design-certificate.jpg"
         },
         {
           title: "أساسيات إدارة التغيير (Change Management Foundations)",
           issuer: "Simplilearn SkillUp",
           trainer: "كريشنا كومار (الرئيس التنفيذي لـ Simplilearn)",
           duration: "أُنجزت بتاريخ 27 أغسطس 2026",
-          description: "إتمام دورة تدريبية عبر الإنترنت حول أساسيات إدارة التغيير، بما يعكس المبادرة والالتزام بتعميق المهارات المهنية. رمز الشهادة: 10656746.",
+          description: "دورة تدريبية عبر الإنترنت تغطي المبادئ الأساسية لإدارة التغيير المؤسسي — بما يشمل التخطيط للتغيير، التواصل مع الأطراف المعنية، والتعامل مع مقاومة التغيير — لدعم انتقال أكثر سلاسة وفعالية داخل الفريق أو المؤسسة. رمز الشهادة: 10656746.",
           badge: "مكتملة",
           image: "/change-management-certificate.jpg"
         },
@@ -396,7 +412,7 @@ export const content = {
           issuer: "إدراك (Edraak)",
           trainer: "د. سهيل جوانه",
           duration: "3 ساعات تدريبية وتفاعلية (أُنجزت بتاريخ 29/8/2026)",
-          description: "شهادة إتمام مستوى تغطي مهارة التفويض الفعّال كأداة إدارية تطويرية، وربط التفويض بأساسيات التوجيه والإرشاد اللازمة لنجاح وفعالية العمليات على المستوى المؤسسي.",
+          description: "شهادة إتمام مستوى حول مهارة التفويض الفعّال كأداة إدارية تطويرية — تغطي كيفية تفويض المهام بطريقة تبني قدرات الفريق، وربط التفويض بأساسيات التوجيه والإرشاد اللازمة لنجاح وفعالية العمليات على المستوى المؤسسي.",
           badge: "مكتملة",
           image: "/delegation-coaching-mentoring-certificate.jpg"
         },
@@ -405,7 +421,7 @@ export const content = {
           issuer: "أكاديمية تورينو (TA)",
           trainer: "شادي سعيد (مدرب دولي)",
           type: "تدريب افتراضي",
-          description: "تدريب احترافي يركز على أساسيات استراتيجيات الأعمال والتسويق الشبكي.",
+          description: "تدريب افتراضي احترافي حول مفاهيم استراتيجيات الأعمال الأساسية وأساسيات التسويق الشبكي، بما يشمل المبادئ الأساسية لبناء وهيكلة شبكة مبيعات.",
           badge: "حضور",
           image: "/bit-course.jpg"
         }
