@@ -45,35 +45,35 @@ export const content = {
           role: "Customer Service | Hospitality | Administrative & Tech Support",
           period: "Present",
           current: true,
-          description: "Ready to join dynamic teams in customer operations, administration, or technical support, bringing adaptable communication skills and strong work ethics."
+          description: "Actively seeking a new role in customer-facing operations, administration, or technical support — ready to bring hands-on field experience, adaptable communication, and a disciplined work ethic to a new team."
         },
         {
           role: "Office Assistant & Logistics Representative",
           company: "Pure Vision Optical Supplies Co.",
           period: "December 2025 – September 2026",
           current: false,
-          description: "Managed physical order dispatch, stock records, and administrative archiving for the company's daily field operations."
+          description: "Handled the daily dispatch of optical equipment and supply orders to clients, kept stock and inventory records updated, and maintained administrative archiving of invoices and delivery paperwork. Coordinated directly with warehouse staff and drivers to track order status, followed up with clients on deliveries and returns, and managed cash and payment records for completed transactions."
         },
         {
           role: "Bakery Worker",
           company: "Abu Diya Bakery",
           period: "1 week",
           current: false,
-          description: "A brief, physically demanding role in daily bakery production operations."
+          description: "A deliberate short-term placement taken on to build endurance and discipline under real workplace pressure — working early shifts on a fast-paced production line, handling dough preparation and packaging near hot ovens, and adapting quickly to physically demanding, high-intensity daily routines."
         },
         {
-          role: "Shipping Point Operator",
-          company: "Local Shipping & Logistics Point",
+          role: "Mobile Recharge & Top-Up Point Operator",
+          company: "Local Mobile Recharge Point",
           period: "1 year",
           current: false,
-          description: "Handled package intake, sorting, and distribution logistics at a local shipping point."
+          description: "Operated a local mobile phone recharge point, handling daily prepaid balance top-ups and recharge card sales across multiple network providers. Managed cash transactions and end-of-day reconciliation, kept accurate records of recharge stock, assisted customers with basic SIM and line issues, and provided walk-in customer service throughout the day."
         },
         {
           role: "Fire Suppression Equipment Technician",
           company: "Al-Ghusein Co. for Monitoring & Fire Extinguishing Systems",
           period: "1 year (during displacement)",
           current: false,
-          description: "First professional experience, preparing and servicing fire suppression equipment under demanding conditions during displacement."
+          description: "First professional role, carried out during displacement. Inspected, refilled, and serviced fire extinguishers and fire suppression equipment, tested devices for proper function and safety compliance, and performed basic maintenance on monitoring and extinguishing systems — building foundational hands-on technical and safety-equipment skills under demanding field conditions."
         }
       ]
     },
@@ -300,35 +300,35 @@ export const content = {
           role: "خدمة العملاء | الضيافة والاستقبال | الدعم الإداري والتقني",
           period: "الآن",
           current: true,
-          description: "متاح فوراً للانضمام إلى فرق عمل في مجالات خدمة العملاء، الإدارة، والدعم التقني، مع الجاهزية لتقديم أفضل أداء واستثمار مهارات التواصل والتنظيم."
+          description: "أبحث فعليًا عن فرصة عمل جديدة في مجالات خدمة العملاء، الإدارة، أو الدعم التقني، وجاهز للانضمام فورًا مستثمرًا خبرتي الميدانية العملية ومهارات التواصل والانضباط بالعمل."
         },
         {
           role: "مساعد إداري ولوجستي ومندوب توصيل",
           company: "شركة الرؤية النقية لمستلزمات مراكز البصريات",
           period: "ديسمبر 2025 - سبتمبر 2026",
           current: false,
-          description: "إدارة التوصيل الميداني، تنظيم سجلات الطلبات، والأرشفة الإدارية للعمليات اليومية للشركة."
+          description: "تولى التوصيل اليومي لمعدات وطلبيات مستلزمات البصريات للعملاء، وتحديث سجلات المخزون والكميات أولاً بأول، والأرشفة الإدارية للفواتير ووثائق التسليم. نسّق مباشرة مع طاقم المستودع والسائقين لمتابعة حالة الطلبيات، وتابع مع العملاء بخصوص التسليم والإرجاعات، وأدار سجلات الدفع والتحصيل النقدي للمعاملات المنجزة."
         },
         {
           role: "عامل مخبز",
           company: "مخبز أبو دية",
           period: "أسبوع واحد",
           current: false,
-          description: "عمل قصير المدة وشاق بدنيًا ضمن عمليات إنتاج المخبز اليومية."
+          description: "تجربة عمل قصيرة ومتعمدة لتعزيز التحمل والانضباط وتحمّل ضغط العمل الشاق في بيئة عمل حقيقية — العمل بنوبات مبكرة على خط إنتاج سريع الوتيرة، والمشاركة بتحضير العجين والتعبئة بالقرب من الأفران الساخنة، والتكيّف السريع مع روتين يومي شاق وعالي الكثافة."
         },
         {
-          role: "عامل في نقطة شحن",
-          company: "نقطة شحن ولوجستيات محلية",
+          role: "عامل بنقطة شحن رصيد جوالات",
+          company: "نقطة شحن رصيد جوالات محلية",
           period: "سنة واحدة",
           current: false,
-          description: "تولى استلام وفرز وتنسيق الشحنات بنقطة شحن محلية."
+          description: "إدارة نقطة شحن رصيد جوالات محلية، بما يشمل عمليات شحن الرصيد اليومية وبيع كروت الشحن لعدة شركات اتصالات مختلفة. إدارة المعاملات النقدية وتسوية الحسابات نهاية كل يوم، والحفاظ على سجلات دقيقة لمخزون كروت الشحن، ومساعدة الزبائن بمشاكل الخطوط والشرائح الأساسية، وتقديم خدمة مباشرة للزبائن الحاضرين طوال اليوم."
         },
         {
           role: "فني تجهيز معدات إطفاء",
           company: "شركة الغصين لأنظمة المراقبة والإطفاء",
           period: "سنة واحدة (خلال فترة النزوح)",
           current: false,
-          description: "الخبرة المهنية الأولى، وتضمنت تجهيز وصيانة أجهزة الإطفاء في ظروف استثنائية خلال فترة النزوح."
+          description: "الخبرة المهنية الأولى، تمت خلال فترة النزوح. فحص وإعادة تعبئة وصيانة طفايات الحريق ومعدات الإطفاء، واختبار الأجهزة للتأكد من سلامة عملها ومطابقتها لمعايير السلامة، وتنفيذ أعمال صيانة أساسية لأنظمة المراقبة والإطفاء — ما أكسبني مهارات تقنية ميدانية أساسية بمعدات السلامة في ظل ظروف عمل صعبة."
         }
       ]
     },
